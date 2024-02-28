@@ -1,0 +1,8 @@
+prefix=/home/hello-robot/catkin_ws/devel
+
+Name: stretch_rtabmap
+Description: Description of stretch_rtabmap
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
