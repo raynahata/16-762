@@ -67,14 +67,14 @@ set(stretch_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(stretch_description_SOURCE_PREFIX /home/hello-robot/catkin_ws/src/stretch_ros/stretch_description)
-  set(stretch_description_DEVEL_PREFIX /home/hello-robot/catkin_ws/devel)
+  set(stretch_description_SOURCE_PREFIX /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_description)
+  set(stretch_description_DEVEL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/devel)
   set(stretch_description_INSTALL_PREFIX "")
   set(stretch_description_PREFIX ${stretch_description_DEVEL_PREFIX})
 else()
   set(stretch_description_SOURCE_PREFIX "")
   set(stretch_description_DEVEL_PREFIX "")
-  set(stretch_description_INSTALL_PREFIX /home/hello-robot/catkin_ws/install)
+  set(stretch_description_INSTALL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/install)
   set(stretch_description_PREFIX ${stretch_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hello-robot/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/hello-robot/grocery_bot/catkin_ws/install/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

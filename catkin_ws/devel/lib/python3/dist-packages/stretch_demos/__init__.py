@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos/src'.split(';')
+__extended_path = '/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

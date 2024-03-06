@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
 include stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/progress.make
 
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal:
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py stretch_demos /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg 
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py stretch_demos /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg 
 
 _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal
 _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build.make
@@ -67,10 +67,10 @@ stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build
 
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/cmake_clean.cmake
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/clean
 
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/depend
 

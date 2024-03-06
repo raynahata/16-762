@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for nodelet_generate_messages_eus.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/bui
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/realsense-ros/realsense2_camera /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/realsense-ros/realsense2_camera /home/hello-robot/catkin_ws/build/realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/realsense-ros/realsense2_camera /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/realsense-ros/realsense2_camera /home/hello-robot/grocery_bot/catkin_ws/build/realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/depend
 

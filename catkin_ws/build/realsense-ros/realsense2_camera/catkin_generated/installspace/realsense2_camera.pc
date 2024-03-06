@@ -1,4 +1,4 @@
-prefix=/home/hello-robot/catkin_ws/install
+prefix=/home/hello-robot/grocery_bot/catkin_ws/install
 
 Name: realsense2_camera
 Description: Description of realsense2_camera

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
-  "/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
-  "/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
-  "/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
   "CMakeFiles/realsense2_camera_generate_messages_lisp"
 )
 

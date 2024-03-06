@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/include/realsense2_camera/DeviceInfo.h"
-  "/home/hello-robot/catkin_ws/devel/include/realsense2_camera/Extrinsics.h"
-  "/home/hello-robot/catkin_ws/devel/include/realsense2_camera/IMUInfo.h"
-  "/home/hello-robot/catkin_ws/devel/include/realsense2_camera/Metadata.h"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/include/realsense2_camera/DeviceInfo.h"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/include/realsense2_camera/Extrinsics.h"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/include/realsense2_camera/IMUInfo.h"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/include/realsense2_camera/Metadata.h"
   "CMakeFiles/realsense2_camera_generate_messages_cpp"
 )
 

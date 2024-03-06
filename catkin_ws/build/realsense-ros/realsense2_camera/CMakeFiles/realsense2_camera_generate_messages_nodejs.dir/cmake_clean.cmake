@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/Extrinsics.js"
-  "/home/hello-robot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/IMUInfo.js"
-  "/home/hello-robot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/Metadata.js"
-  "/home/hello-robot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/srv/DeviceInfo.js"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/Extrinsics.js"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/IMUInfo.js"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/msg/Metadata.js"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/realsense2_camera/srv/DeviceInfo.js"
   "CMakeFiles/realsense2_camera_generate_messages_nodejs"
 )
 

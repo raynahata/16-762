@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 .PHONY : stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_navigation && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_navigation && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/stretch_ros/stretch_navigation /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/stretch_ros/stretch_navigation /home/hello-robot/catkin_ws/build/stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_navigation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_navigation /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stretch_ros/stretch_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

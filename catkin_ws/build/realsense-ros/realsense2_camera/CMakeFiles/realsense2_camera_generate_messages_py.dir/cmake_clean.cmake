@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Extrinsics.py"
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_IMUInfo.py"
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Metadata.py"
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/__init__.py"
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/_DeviceInfo.py"
-  "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/__init__.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Extrinsics.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_IMUInfo.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Metadata.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/__init__.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/_DeviceInfo.py"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/__init__.py"
   "CMakeFiles/realsense2_camera_generate_messages_py"
 )
 

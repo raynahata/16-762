@@ -1,8 +1,8 @@
-# Install script for directory: /home/hello-robot/catkin_ws/src/stretch_ros/stretch_gazebo
+# Install script for directory: /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/grocery_bot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo/cmake" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazeboConfig.cmake"
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazeboConfig-version.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazeboConfig.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_gazebo/catkin_generated/installspace/stretch_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE FILE FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_gazebo/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_gazebo/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_gazebo/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_gazebo/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_gazebo/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_gazebo" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_gazebo/urdf")
 endif()
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for control_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/bu
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
 
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_core && $(CMAKE_COMMAND) -P CMakeFiles/control_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_core && $(CMAKE_COMMAND) -P CMakeFiles/control_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/clean
 
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/stretch_ros/stretch_core /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/stretch_ros/stretch_core /home/hello-robot/catkin_ws/build/stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_core /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_core /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/depend
 

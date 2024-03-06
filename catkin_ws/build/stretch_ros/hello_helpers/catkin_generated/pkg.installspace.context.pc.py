@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "hello_helpers"
-PROJECT_SPACE_DIR = "/home/hello-robot/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/hello-robot/grocery_bot/catkin_ws/install"
 PROJECT_VERSION = "0.2.0"

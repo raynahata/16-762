@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/share/roseus/ros/realsense2_camera/manifest.l"
-  "/home/hello-robot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
-  "/home/hello-robot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
-  "/home/hello-robot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/Metadata.l"
-  "/home/hello-robot/catkin_ws/devel/share/roseus/ros/realsense2_camera/srv/DeviceInfo.l"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/realsense2_camera/manifest.l"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/realsense2_camera/msg/Metadata.l"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/realsense2_camera/srv/DeviceInfo.l"
   "CMakeFiles/realsense2_camera_generate_messages_eus"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hello-robot/catkin_ws/src/respeaker_ros
+# Install script for directory: /home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/grocery_bot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,52 +38,52 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/respeaker_ros" TYPE FILE FILES "/home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/respeaker_ros" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/respeaker_ros" TYPE FILE FILES "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/respeaker_ros" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/respeaker_ros" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/respeaker_ros" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_ros.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros/cmake" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_rosConfig.cmake"
-    "/home/hello-robot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_rosConfig-version.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_rosConfig.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_rosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros" TYPE FILE FILES "/home/hello-robot/catkin_ws/src/respeaker_ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/respeaker_ros" TYPE PROGRAM FILES "/home/hello-robot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/respeaker_ros" TYPE PROGRAM FILES "/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/respeaker_node.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/respeaker_ros" TYPE PROGRAM FILES "/home/hello-robot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/speech_to_text.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/respeaker_ros" TYPE PROGRAM FILES "/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/catkin_generated/installspace/speech_to_text.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros" TYPE DIRECTORY FILES
-    "/home/hello-robot/catkin_ws/src/respeaker_ros/scripts"
-    "/home/hello-robot/catkin_ws/src/respeaker_ros/launch"
+    "/home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/scripts"
+    "/home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/launch"
     USE_SOURCE_PERMISSIONS)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros" TYPE FILE FILES "/home/hello-robot/catkin_ws/src/respeaker_ros/requirements.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/respeaker_ros" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/requirements.txt")
 endif()
 

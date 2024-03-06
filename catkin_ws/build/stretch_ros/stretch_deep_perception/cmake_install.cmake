@@ -1,8 +1,8 @@
-# Install script for directory: /home/hello-robot/catkin_ws/src/stretch_ros/stretch_deep_perception
+# Install script for directory: /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_deep_perception
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/grocery_bot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perception.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perception.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_deep_perception/cmake" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perceptionConfig.cmake"
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perceptionConfig-version.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perceptionConfig.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_deep_perception/catkin_generated/installspace/stretch_deep_perceptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_deep_perception" TYPE FILE FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_deep_perception/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_deep_perception" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_deep_perception/package.xml")
 endif()
 

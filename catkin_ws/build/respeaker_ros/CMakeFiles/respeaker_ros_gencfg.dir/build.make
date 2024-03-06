@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for respeaker_ros_gencfg.
 
 # Include the progress variables for this target.
 include respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/progress.make
 
-respeaker_ros/CMakeFiles/respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-respeaker_ros/CMakeFiles/respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
+respeaker_ros/CMakeFiles/respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+respeaker_ros/CMakeFiles/respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
 
 
-/home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /home/hello-robot/catkin_ws/src/respeaker_ros/cfg/Respeaker.cfg
-/home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/Respeaker.cfg: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h /home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py"
-	cd /home/hello-robot/catkin_ws/build/respeaker_ros && ../catkin_generated/env_cached.sh /home/hello-robot/catkin_ws/build/respeaker_ros/setup_custom_pythonpath.sh /home/hello-robot/catkin_ws/src/respeaker_ros/cfg/Respeaker.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/hello-robot/catkin_ws/devel/share/respeaker_ros /home/hello-robot/catkin_ws/devel/include/respeaker_ros /home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/cfg/Respeaker.cfg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/Respeaker.cfg: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros && ../catkin_generated/env_cached.sh /home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/setup_custom_pythonpath.sh /home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros/cfg/Respeaker.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros
 
-/home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox
 
-/home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox
 
-/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
 
-/home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc
 
 respeaker_ros_gencfg: respeaker_ros/CMakeFiles/respeaker_ros_gencfg
-respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
-respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox
-respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox
-respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
-respeaker_ros_gencfg: /home/hello-robot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc
+respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/include/respeaker_ros/RespeakerConfig.h
+respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.dox
+respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig-usage.dox
+respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/respeaker_ros/cfg/RespeakerConfig.py
+respeaker_ros_gencfg: /home/hello-robot/grocery_bot/catkin_ws/devel/share/respeaker_ros/docs/RespeakerConfig.wikidoc
 respeaker_ros_gencfg: respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/build.make
 
 .PHONY : respeaker_ros_gencfg
@@ -91,10 +91,10 @@ respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/build: respeaker_ros_gencfg
 .PHONY : respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/build
 
 respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/respeaker_ros && $(CMAKE_COMMAND) -P CMakeFiles/respeaker_ros_gencfg.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros && $(CMAKE_COMMAND) -P CMakeFiles/respeaker_ros_gencfg.dir/cmake_clean.cmake
 .PHONY : respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/clean
 
 respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/respeaker_ros /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/respeaker_ros /home/hello-robot/catkin_ws/build/respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/respeaker_ros /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros /home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : respeaker_ros/CMakeFiles/respeaker_ros_gencfg.dir/depend
 

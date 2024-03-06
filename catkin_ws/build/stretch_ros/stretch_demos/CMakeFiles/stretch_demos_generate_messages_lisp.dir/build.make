@@ -43,157 +43,157 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 
 # Utility rule file for stretch_demos_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/progress.make
 
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp
 
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from stretch_demos/ArucoHeadScanAction.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from stretch_demos/ArucoHeadScanAction.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from stretch_demos/ArucoHeadScanActionGoal.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from stretch_demos/ArucoHeadScanActionGoal.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from stretch_demos/ArucoHeadScanActionResult.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from stretch_demos/ArucoHeadScanActionResult.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from stretch_demos/ArucoHeadScanActionFeedback.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from stretch_demos/ArucoHeadScanActionFeedback.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from stretch_demos/ArucoHeadScanGoal.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from stretch_demos/ArucoHeadScanGoal.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from stretch_demos/ArucoHeadScanResult.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from stretch_demos/ArucoHeadScanResult.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from stretch_demos/ArucoHeadScanFeedback.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from stretch_demos/ArucoHeadScanFeedback.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from stretch_demos/VisualServoAction.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from stretch_demos/VisualServoAction.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from stretch_demos/VisualServoActionGoal.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from stretch_demos/VisualServoActionGoal.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from stretch_demos/VisualServoActionResult.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from stretch_demos/VisualServoActionResult.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from stretch_demos/VisualServoActionFeedback.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from stretch_demos/VisualServoActionFeedback.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from stretch_demos/VisualServoGoal.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from stretch_demos/VisualServoGoal.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from stretch_demos/VisualServoResult.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from stretch_demos/VisualServoResult.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp: /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from stretch_demos/VisualServoFeedback.msg"
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg -Istretch_demos:/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from stretch_demos/VisualServoFeedback.msg"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg
 
 stretch_demos_generate_messages_lisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp
-stretch_demos_generate_messages_lisp: /home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanAction.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionGoal.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionResult.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanGoal.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanResult.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/ArucoHeadScanFeedback.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoAction.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionGoal.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionResult.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoActionFeedback.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoGoal.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoResult.lisp
+stretch_demos_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos/msg/VisualServoFeedback.lisp
 stretch_demos_generate_messages_lisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build.make
 
 .PHONY : stretch_demos_generate_messages_lisp
@@ -204,10 +204,10 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/bu
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build
 
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/clean:
-	cd /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/stretch_demos_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/stretch_demos_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/clean
 
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/depend:
-	cd /home/hello-robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/catkin_ws/src /home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/catkin_ws/build /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/depend
 

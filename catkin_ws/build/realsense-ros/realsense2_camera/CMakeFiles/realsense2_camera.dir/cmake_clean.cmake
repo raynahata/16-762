@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hello-robot/catkin_ws/devel/lib/librealsense2_camera.pdb"
-  "/home/hello-robot/catkin_ws/devel/lib/librealsense2_camera.so"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/librealsense2_camera.pdb"
+  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/librealsense2_camera.so"
   "CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"

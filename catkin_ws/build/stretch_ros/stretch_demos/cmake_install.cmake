@@ -1,8 +1,8 @@
-# Install script for directory: /home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos
+# Install script for directory: /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/grocery_bot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,88 +38,88 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/safe_execute_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/action" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos/action/ArucoHeadScan.action"
-    "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos/action/VisualServo.action"
+    "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos/action/ArucoHeadScan.action"
+    "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos/action/VisualServo.action"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/msg" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/msg" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
-    "/home/hello-robot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+    "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/cmake" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/cmake" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/include/stretch_demos")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/share/roseus/ros/stretch_demos")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/share/common-lisp/ros/stretch_demos")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/stretch_demos")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/share/gennodejs/ros/stretch_demos")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/stretch_demos")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos" FILES_MATCHING REGEX "/home/hello-robot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos/.+/__init__.pyc?$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos" FILES_MATCHING REGEX "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/stretch_demos/.+/__init__.pyc?$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/cmake" TYPE FILE FILES "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/cmake" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demos-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos/cmake" TYPE FILE FILES
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demosConfig.cmake"
-    "/home/hello-robot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demosConfig-version.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demosConfig.cmake"
+    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/catkin_generated/installspace/stretch_demosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos" TYPE FILE FILES "/home/hello-robot/catkin_ws/src/stretch_ros/stretch_demos/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_demos" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos/package.xml")
 endif()
 
