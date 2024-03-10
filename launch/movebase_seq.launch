@@ -1,0 +1,18 @@
+<launch>
+
+<!-- MoveBaseSeq node launch and Points Sequence ROS Parameters Loading -->
+
+    <!--Run move_base_seqs node--> 
+        <!--Make sure to update pkg name-->
+        <node pkg="simple_navigation_goals" type="move_base_seq" name="move_base_seq" output="screen">
+        
+        <!-- Load Sequence of x coordinates -->
+            <rosparam param="x_seq">[0.2,0.5]</rosparam>
+        <!-- Load Sequence of x coordinates -->
+            <rosparam param="y_seq">[0.2,0.5]</rosparam>
+        <!-- Load Sequence of Desired Yaw Angles (no rotations around x and y axes) in degrees-->
+            <rosparam param="yea_seq">[90,0]</rosparam>
+
+        </node>
+
+</launch>
