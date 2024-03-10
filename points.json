@@ -1,0 +1,46 @@
+{
+    "counter":{
+        "position":{
+            "x": 0,
+            "y": 0,
+            "z": 0
+
+        },
+        "orientation":{
+            "x":0,
+            "y":0,
+            "z":0, 
+            "w":0
+        }
+    }, 
+    "tv":{
+        "position":{
+            "x": 0,
+            "y": 0,
+            "z": 0
+
+        },
+        "orientation":{
+            "x":0,
+            "y":0,
+            "z":0, 
+            "w":0
+        }
+    },
+    "table":{
+        "position":{
+            "x": 0,
+            "y": 0,
+            "z": 0
+
+        },
+        "orientation":{
+            "x":0,
+            "y":0,
+            "z":0, 
+            "w":0
+        }
+    }
+
+
+}

@@ -10,7 +10,8 @@ from geometry_msgs.msg import Pose, Point, Quaternion
 from tf.transformations import quaternion_from_euler
 
 '''
-This class moves robot to a goal location
+This class moves robot to a goal location. 
+Based on Food Basket Delivery with the Stretch RE1 by J. Sun & P. Varshney - https://zackory.com/rc2023/media/16_887_Team_1_Project_Report.pdf
 '''
 
 POINTS = json.load(open('points.json', 'r'))

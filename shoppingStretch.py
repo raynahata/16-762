@@ -19,7 +19,7 @@ if __name__ == '__main__':
        
         if(pickupReached):
             rospy.loginfo(f"Reached pickup location at {pickup}")
-            #grab item method
+            #grab itemon method
             rospy.loginfo(f"Grabbed item")
 
             rospy.loginfo(f"Going to dropoff location: {dropoff}")
