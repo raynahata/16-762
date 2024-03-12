@@ -22,6 +22,8 @@ from math import pi
 # Import hello_misc script for handling trajectory goals with an action client
 import hello_helpers.hello_misc as hm
 
+#import hello_helpers.arcuo_navigation as an 
+
 # We're going to subscribe to a JointState message type, so we need to import
 # the definition for it
 from sensor_msgs.msg import JointState
@@ -134,6 +136,7 @@ class LocateArUcoTag(hm.HelloNode):
             # for the result
             self.trajectory_client.send_goal(trajectory_goal)
             self.trajectory_client.wait_for_result()
+    
 
     def find_tag(self, tag_name='docking_station'):
         """
@@ -212,6 +215,11 @@ class LocateArUcoTag(hm.HelloNode):
         #TODO: Change this depeding on what shelf we are looking for 
         station=input("What station are you looking for? ")
         pose = self.find_tag(station)
+        self.move_to_pose(pose) #this should work???
+        
+        
+
+
 
 if __name__ == '__main__':
     # Use a try-except block
