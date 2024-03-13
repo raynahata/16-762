@@ -10,9 +10,9 @@ import stretch_body.robot
 
 # NOTE before running: `python3 -m pip install ikpy graphviz urdfpy`
 
-target_point = [-0.043, -0.441, 0.654]
-target_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, -np.pi/2) # [roll, pitch, yaw]
-pretarget_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, 0.0)
+target_point = [0.0, 0.4, 0.8]
+target_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, 0.0) # [roll, pitch, yaw]
+pretarget_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, np.pi/2)
 
 
 # Setup the Python API
@@ -24,7 +24,8 @@ if not robot.startup():
 if not robot.is_calibrated():
     robot.home()
 
-urdf_path = str((pathlib.Path(hu.get_fleet_directory()) / 'exported_urdf' / 'stretch.urdf').absolute())
+urdf_path = "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_description/urdf/exported_urdf/stretch.urdf"
+print(urdf_path)
 tree = ikpy.urdf.utils.get_urdf_tree(urdf_path, "base_link")[0]
 # display.display_png(tree)
 # print(f"Your robot is equipped with the '{robot.end_of_arm.name}' end-effector")
@@ -33,7 +34,7 @@ print('Run: \'roslaunch stretch_description display.launch\' to see where the ba
 
 # Remove unnecessary links/joints
 original_urdf = urdfpy.URDF.load(urdf_path)
-modified_urdf = original_urdf.copy()
+modified_urdf = original_urdf
 names_of_links_to_remove = ['link_right_wheel', 'link_left_wheel', 'caster_link', 'link_gripper_finger_left', 'link_gripper_fingertip_left', 'link_gripper_finger_right', 'link_gripper_fingertip_right', 'link_head', 'link_head_pan', 'link_head_tilt', 'link_aruco_right_base', 'link_aruco_left_base', 'link_aruco_shoulder', 'link_aruco_top_wrist', 'link_aruco_inner_wrist', 'camera_bottom_screw_frame', 'camera_link', 'camera_depth_frame', 'camera_depth_optical_frame', 'camera_infra1_frame', 'camera_infra1_optical_frame', 'camera_infra2_frame', 'camera_infra2_optical_frame', 'camera_color_frame', 'camera_color_optical_frame', 'camera_accel_frame', 'camera_accel_optical_frame', 'camera_gyro_frame', 'camera_gyro_optical_frame', 'laser', 'respeaker_base', 'base_imu']
 links_to_remove = [l for l in modified_urdf._links if l.name in names_of_links_to_remove]
 for lr in links_to_remove:
