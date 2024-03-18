@@ -1,5 +1,6 @@
 import rospy
 import math
+import json
 
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
@@ -13,12 +14,12 @@ from tf.transformations import quaternion_from_euler
 This class moves robot to a goal location. 
 Based on Food Basket Delivery with the Stretch RE1 by J. Sun & P. Varshney - https://zackory.com/rc2023/media/16_887_Team_1_Project_Report.pdf
 '''
-
-POINTS = json.load(open('points.json', 'r'))
+f = open('points.json', 'r')
+POINTS = json.load(f)
 # PATH_COORDS = []
 
 class Move2Point():
-    def __init__(self, pickup, dropoff): #path_points are list of path locations
+    def __init__(self): #path_points are list of path locations
 
         rospy.init_node('p2p_nav')
 
@@ -35,8 +36,6 @@ class Move2Point():
         # else:
         #     rospy.loginfo(f"Failed to reach pickup location at {pickup}")
 
-
-    
 
     def moveToGoal(self, goal):
         goal_coords = POINTS[goal]
@@ -62,7 +61,7 @@ class Move2Point():
 
         rospy.loginfo("Sending goal location...")
         ac.send_goal(goal)
-        start_time = time.perf_counter()
+        #start_time = time.perf_counter()
 
         ac.wait_for_result(rospy.Duration(60))
 
