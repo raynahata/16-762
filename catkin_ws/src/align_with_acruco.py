@@ -43,7 +43,7 @@ class NavigateToMarker:
         desired_pose = PoseStamped()
         # Placeholder for actual calculation based on marker_pose_in_map
         offset_x = -0.03  # Example offset
-        offset_y = -0.7  # Example offset
+        offset_y = -0.5  # Example offset
         
         desired_pose.header = marker_pose_in_map.header
         desired_pose.pose.position.x = marker_pose_in_map.pose.position.x - offset_x
@@ -61,7 +61,6 @@ class NavigateToMarker:
         goal.target_pose.header.stamp = rospy.Time.now()
         goal.target_pose.pose = desired_pose.pose
 
-        print(desired_pose.pose)
         self.move_base_client.send_goal(goal)
         rospy.loginfo("Goal sent to move_base.")
 
