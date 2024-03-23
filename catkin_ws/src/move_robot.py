@@ -146,7 +146,8 @@ def move_to_configuration(tool, q):#,x,y,z):
         # robot.arm.move_to(0)#0.29)  #Y
         # robot.push_command()
 
-        x =0.08# -0.17556465255122378
+        x =0.11# -0.17556465255122378
+        #x=x-0.2
         robot.base.translate_by(0.05)#x
         z_offset = 0.1
         z=0.7530867751207195 +z_offset
@@ -158,7 +159,7 @@ def move_to_configuration(tool, q):#,x,y,z):
         robot.end_of_arm.move_to('stretch_gripper', 50)
         robot.push_command()
         y_offset =  0.1
-        y = 0.174843046253286 + y_offset
+        y = 0.5326598640832136 + y_offset
         robot.arm.move_to(y)#0.29)  #Y
         robot.push_command()
         
