@@ -71,23 +71,23 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanAction.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from stretch_demos/ArucoHeadScanAction.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionGoal.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from stretch_demos/ArucoHeadScanActionGoal.msg"
@@ -95,19 +95,19 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionResult.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from stretch_demos/ArucoHeadScanActionResult.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/ArucoHeadScanActionFeedback.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from stretch_demos/ArucoHeadScanActionFeedback.msg"
@@ -133,15 +133,15 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoAction.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from stretch_demos/VisualServoAction.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -149,17 +149,17 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp: /home/
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionGoal.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from stretch_demos/VisualServoActionGoal.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionResult.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from stretch_demos/VisualServoActionResult.msg"
@@ -167,10 +167,10 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos/VisualServoActionFeedback.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from stretch_demos/VisualServoActionFeedback.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/stretch_demos -e /opt/ros/noetic/share/gencpp/cmake/..

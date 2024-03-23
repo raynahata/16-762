@@ -7,6 +7,7 @@ import urdfpy
 import numpy as np
 import ikpy.chain
 import stretch_body.robot
+import time
 
 target_point = [0.147,-0.28,0.76]
 target_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, -np.pi/2) # [roll, pitch, yaw]
@@ -100,31 +101,81 @@ def get_current_configuration(tool):
         q_roll = bound_range('joint_wrist_roll', robot.end_of_arm.status['wrist_roll']['pos'])
         return [0.0, q_base, 0.0, q_lift, 0.0, q_arml, q_arml, q_arml, q_arml, q_yaw, 0.0, q_pitch, q_roll, 0.0, 0.0]
 
-def move_to_configuration(tool, q):
+
+
+# def move_to_configuration(self, tool, q):
+#     if tool == 'tool_stretch_gripper':
+#         q_base = q[1]
+#         q_lift = q[3]
+#         q_arm = q[5] + q[6] + q[7] + q[8]
+#         q_yaw = q[9]
+#         self.robot.base.translate_by(q_base)
+#         self.robot.lift.move_to(q_lift)
+#         self.robot.arm.move_to(q_arm)
+#         self.robot.end_of_arm.move_to('wrist_yaw', q_yaw)
+
+#         # robot.end_of_arm.move_to('wrist_pitch', np.radians(30))
+#         # robot.end_of_arm.move_to('wrist_roll', np.radians(30))
+#         self.robot.end_of_arm.move_to('stretch_gripper', 50)
+
+#         self.robot.head.move_by('head_pan', np.radians(45)) # Move head pan
+#         self.robot.head.move_by('head_tilt', np.radians(45)) # Move head til
+#         self.robot.push_command()
+    
+# x: 0.17797288695368874
+# y: -0.2495724416828479
+# z: 0.783256144189024
+
+#   x: 0.17556465255122378
+# #     y: -0.2037180381848283
+# #     z: 0.7583901092242229
+
+
+#  x: 0.051639816016827766
+#     y: -0.174843046253286
+#     z: 0.7530867751207195
+
+
+def move_to_configuration(tool, q):#,x,y,z):
     if tool == 'tool_stretch_gripper':
         q_base = q[1]
         q_lift = q[3]
         q_arm = q[5] + q[6] + q[7] + q[8]
         q_yaw = q[9]
-        robot.base.translate_by(q_base)
-        robot.lift.move_to(q_lift)
-        robot.arm.move_to(q_arm)
-        robot.end_of_arm.move_to('wrist_yaw', q_yaw)
+        print("q yaw is",q_yaw)
+        # robot.arm.move_to(0)#0.29)  #Y
+        # robot.push_command()
+
+        x =0.08# -0.17556465255122378
+        robot.base.translate_by(0.05)#x
+        z_offset = 0.1
+        z=0.7530867751207195 +z_offset
+        robot.lift.move_to( z)#0.85) #z
         robot.push_command()
-    elif tool == 'tool_stretch_dex_wrist':
-        q_base = q[1]
-        q_lift = q[3]
-        q_arm = q[5] + q[6] + q[7] + q[8]
-        q_yaw = q[9]
-        q_pitch = q[11]
-        q_roll = q[12]
-        robot.base.translate_by(q_base)
-        robot.lift.move_to(q_lift)
-        robot.arm.move_to(q_arm)
-        robot.end_of_arm.move_to('wrist_yaw', q_yaw)
-        robot.end_of_arm.move_to('wrist_pitch', q_pitch)
-        robot.end_of_arm.move_to('wrist_roll', q_roll)
+
+
+        time.sleep(5)
+        robot.end_of_arm.move_to('stretch_gripper', 50)
         robot.push_command()
+        y_offset =  0.1
+        y = 0.174843046253286 + y_offset
+        robot.arm.move_to(y)#0.29)  #Y
+        robot.push_command()
+        
+        robot.end_of_arm.move_to('wrist_yaw', 0)
+        robot.push_command()
+        robot.arm.wait_until_at_setpoint() 
+
+
+        robot.end_of_arm.move_to('stretch_gripper', 0)
+        robot.push_command()
+        robot.arm.wait_until_at_setpoint() 
+        time.sleep(5)
+
+        robot.arm.move_to(0)
+        robot.push_command()
+        
+
 
 def move_to_grasp_goal(target_point, target_orientation, pretarget_orientation=None):
     q_init = get_current_configuration(tool=robot.end_of_arm.name)
@@ -134,9 +185,9 @@ def move_to_grasp_goal(target_point, target_orientation, pretarget_orientation=N
     print('Solution:', q_soln)
 
     err = np.linalg.norm(chain.forward_kinematics(q_soln)[:3, 3] - target_point)
-    if not np.isclose(err, 0.0, atol=1e-2):
-        print("IKPy did not find a valid solution")
-        return
+    # if not np.isclose(err, 0.0, atol=1e-2):
+    #     print("IKPy did not find a valid solution")
+    #     return
     move_to_configuration(tool=robot.end_of_arm.name, q=q_soln)
     return q_soln
 
@@ -145,6 +196,6 @@ def get_current_grasp_pose():
     return chain.forward_kinematics(q)
 
 
-robot.stow()
+# robot.stow()
 move_to_grasp_goal(target_point, target_orientation, pretarget_orientation)
 print(get_current_grasp_pose())

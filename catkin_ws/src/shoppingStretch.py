@@ -17,19 +17,19 @@ if __name__ == '__main__':
         p2p = pointToPointNav.Move2Point()
 
         #rospy.loginfo(f"Going to pickup location")
-        pickupReached = True #p2p.moveToGoal("pickup") #go to pick up location
+        pickupReached = p2p.moveToGoal("pickup") #go to pick up location
        
         if(pickupReached):
-            #rospy.loginfo(f"Reached pickup location")
+            rospy.loginfo(f"Reached pickup location")
             #grab itemon method
-            #rospy.sleep(3)
+            rospy.sleep(3)
 
             #rospy.loginfo(f"Starting alignment")
 
             #rospy.loginfo(f"Finished Alignment")
 
             rospy.loginfo(f"Going to dropoff location")
-            dropoffReached = p2p.moveToGoal("dropoff") #go to drop off location
+            dropoffReached = p2p.moveToGoal("object") #go to drop off location
 
             if(dropoffReached):
                  rospy.loginfo(f"Reached dropoff location")
