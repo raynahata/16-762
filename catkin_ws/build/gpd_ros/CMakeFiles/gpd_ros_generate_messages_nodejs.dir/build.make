@@ -65,50 +65,50 @@ gpd_ros/CMakeFiles/gpd_ros_generate_messages_nodejs: /home/hello-robot/grocery_b
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudIndexed.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/std_msgs/msg/Int64.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudIndexed.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from gpd_ros/CloudIndexed.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudIndexed.msg -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSamples.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/std_msgs/msg/Int64.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSamples.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from gpd_ros/CloudSamples.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSamples.msg -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/std_msgs/msg/Int64.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/CloudSources.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from gpd_ros/CloudSources.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfig.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /opt/ros/noetic/share/std_msgs/msg/Float32.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfig.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from gpd_ros/GraspConfig.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfig.msg -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfigList.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfig.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/std_msgs/msg/Float32.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfig.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg/GraspConfigList.js: /opt/ros/noetic/share/std_msgs/msg/Float32.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from gpd_ros/GraspConfigList.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfigList.msg -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/msg
 
@@ -121,17 +121,17 @@ gpd_ros/CMakeFiles/gpd_ros_generate_messages_nodejs: /home/hello-robot/grocery_b
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/srv/detect_grasps.srv
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudIndexed.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfigList.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfigList.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/std_msgs/msg/Int64.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/sensor_msgs/msg/PointField.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/GraspConfig.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudIndexed.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/std_msgs/msg/Float32.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg/CloudSources.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/std_msgs/msg/Int64.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv/detect_grasps.js: /opt/ros/noetic/share/sensor_msgs/msg/PointCloud2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from gpd_ros/detect_grasps.srv"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/srv/detect_grasps.srv -Igpd_ros:/home/hello-robot/grocery_bot/catkin_ws/src/gpd_ros/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p gpd_ros -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/gpd_ros/srv
 

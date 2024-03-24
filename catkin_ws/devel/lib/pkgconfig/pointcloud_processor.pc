@@ -1,8 +1,0 @@
-prefix=/home/hello-robot/grocery_bot/catkin_ws/devel
-
-Name: pointcloud_processor
-Description: Description of pointcloud_processor
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
