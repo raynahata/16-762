@@ -1,0 +1,4 @@
+# AlignBase.srv
+string location
+---
+bool success
