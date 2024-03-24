@@ -72,41 +72,41 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from stretch_demos/ArucoHeadScanAction.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from stretch_demos/ArucoHeadScanActionGoal.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from stretch_demos/ArucoHeadScanActionResult.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/ArucoHeadScanActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from stretch_demos/ArucoHeadScanActionFeedback.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
@@ -127,41 +127,41 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus: /home/
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoAction.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from stretch_demos/VisualServoAction.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionGoal.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from stretch_demos/VisualServoActionGoal.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionResult.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp code from stretch_demos/VisualServoActionResult.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg/VisualServoActionFeedback.l: /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from stretch_demos/VisualServoActionFeedback.msg"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg -Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p stretch_demos -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/stretch_demos/msg
 

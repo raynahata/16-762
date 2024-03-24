@@ -1,0 +1,10 @@
+(cl:defpackage manipulation-srv
+  (:use )
+  (:export
+   "EXECUTECOMMAND"
+   "<EXECUTECOMMAND-REQUEST>"
+   "EXECUTECOMMAND-REQUEST"
+   "<EXECUTECOMMAND-RESPONSE>"
+   "EXECUTECOMMAND-RESPONSE"
+  ))
+

@@ -136,7 +136,11 @@ def get_current_configuration(tool):
 #     z: 0.7530867751207195
 
 
-def move_to_configuration(tool, q):#,x,y,z):
+    # x: -0.018836160151327053
+    # y: 0.10720302271005944
+    # z: 0.7025271206546255
+
+def drop_off(tool, q):#,x,y,z):
     if tool == 'tool_stretch_gripper':
         q_base = q[1]
         q_lift = q[3]
@@ -146,34 +150,38 @@ def move_to_configuration(tool, q):#,x,y,z):
         # robot.arm.move_to(0)#0.29)  #Y
         # robot.push_command()
 
-        x =0.08# -0.17556465255122378
-        robot.base.translate_by(0.05)#x
-        z_offset = 0.1
-        z=0.7530867751207195 +z_offset
-        robot.lift.move_to( z)#0.85) #z
+        robot.head.move_to('head_pan', np.radians(-90))
+        robot.push_command()
+        robot.head.move_to('head_tilt', np.radians(-30))
         robot.push_command()
 
 
-        time.sleep(5)
-        robot.end_of_arm.move_to('stretch_gripper', 50)
-        robot.push_command()
-        y_offset =  0.1
-        y = 0.174843046253286 + y_offset
-        robot.arm.move_to(y)#0.29)  #Y
-        robot.push_command()
+        # x = -0.018836160151327053# -0.17556465255122378
+        # robot.base.translate_by(x)#x
+        # z_offset = 0.3
+        # z=0.7025271206546255 +z_offset
+        # robot.lift.move_to( z)#0.85) #z
+        # robot.push_command()
+
+
+        # time.sleep(5)
+        # robot.end_of_arm.move_to('stretch_gripper', 50)
+        # robot.push_command()
+        # y_offset =  0.1
+        # y = 0.10720302271005944 + y_offset
+        # robot.arm.move_to(y)#0.29)  #Y
+        # robot.push_command()
         
-        robot.end_of_arm.move_to('wrist_yaw', 0)
-        robot.push_command()
-        robot.arm.wait_until_at_setpoint() 
+        # robot.end_of_arm.move_to('wrist_yaw', 0)
+        # robot.push_command()
+        # robot.arm.wait_until_at_setpoint() 
 
+        # robot.push_command()
+        # robot.arm.wait_until_at_setpoint() 
+        # time.sleep(5)
 
-        robot.end_of_arm.move_to('stretch_gripper', 0)
-        robot.push_command()
-        robot.arm.wait_until_at_setpoint() 
-        time.sleep(5)
-
-        robot.arm.move_to(0)
-        robot.push_command()
+        # robot.arm.move_to(0)
+        # robot.push_command()
         
 
 
@@ -188,7 +196,7 @@ def move_to_grasp_goal(target_point, target_orientation, pretarget_orientation=N
     # if not np.isclose(err, 0.0, atol=1e-2):
     #     print("IKPy did not find a valid solution")
     #     return
-    move_to_configuration(tool=robot.end_of_arm.name, q=q_soln)
+    drop_off(tool=robot.end_of_arm.name, q=q_soln)
     return q_soln
 
 def get_current_grasp_pose():

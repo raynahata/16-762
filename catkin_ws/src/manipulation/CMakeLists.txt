@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(pointcloud_processor)
+project(manipulation)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -11,7 +11,12 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   rospy
   sensor_msgs
+  std_msgs
+  message_generation
 )
+
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -54,11 +59,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  ExecuteCommand.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -68,10 +72,13 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   sensor_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+ )
+
+
+
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -103,11 +110,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES pointcloud_processor
-#  CATKIN_DEPENDS pcl_ros rospy sensor_msgs
-#  DEPENDS system_lib
+  CATKIN_DEPENDS rospy std_msgs message_runtime
+  # Add other package dependencies here
 )
+
 
 ###########
 ## Build ##
