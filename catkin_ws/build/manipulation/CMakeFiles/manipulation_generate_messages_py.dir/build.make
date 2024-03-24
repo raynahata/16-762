@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_py.dir/progress.make
 
+<<<<<<< HEAD
 manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
 manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
 
@@ -64,11 +65,28 @@ manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/gro
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
+=======
+manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
+
+
+/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV manipulation/ExecuteCommand"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv
+
+/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for manipulation"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv --initpy
 
 manipulation_generate_messages_py: manipulation/CMakeFiles/manipulation_generate_messages_py
+<<<<<<< HEAD
 manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
+=======
+manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
 manipulation_generate_messages_py: manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build.make
 

@@ -61,7 +61,7 @@ class BaseAligner:
             
             transform_to_base = self.tf_buffer.lookup_transform("base_link",
                                        # source frame:
-                                       "object",
+                                       "bottle",
                                        # get the tf at the time the pose was valid
                                        rospy.Time(0),
                                        # wait for at most 1 second for transform, otherwise throw

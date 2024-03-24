@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/progress.make
 
+<<<<<<< HEAD
 manipulation/CMakeFiles/manipulation_generate_messages_nodejs: /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/AlignBase.js
 
 
@@ -63,6 +64,18 @@ manipulation/CMakeFiles/manipulation_generate_messages_nodejs: /home/hello-robot
 
 manipulation_generate_messages_nodejs: manipulation/CMakeFiles/manipulation_generate_messages_nodejs
 manipulation_generate_messages_nodejs: /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/AlignBase.js
+=======
+manipulation/CMakeFiles/manipulation_generate_messages_nodejs: /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/ExecuteCommand.js
+
+
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/ExecuteCommand.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/ExecuteCommand.js: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from manipulation/ExecuteCommand.srv"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv
+
+manipulation_generate_messages_nodejs: manipulation/CMakeFiles/manipulation_generate_messages_nodejs
+manipulation_generate_messages_nodejs: /home/hello-robot/grocery_bot/catkin_ws/devel/share/gennodejs/ros/manipulation/srv/ExecuteCommand.js
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 manipulation_generate_messages_nodejs: manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build.make
 
 .PHONY : manipulation_generate_messages_nodejs

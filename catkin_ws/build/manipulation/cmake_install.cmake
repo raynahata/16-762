@@ -38,7 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulation/srv" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulation/srv" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv")
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -1,34 +1,34 @@
 
 "use strict";
 
-let ArucoHeadScanActionGoal = require('./ArucoHeadScanActionGoal.js');
-let ArucoHeadScanAction = require('./ArucoHeadScanAction.js');
+let VisualServoActionFeedback = require('./VisualServoActionFeedback.js');
 let VisualServoAction = require('./VisualServoAction.js');
 let ArucoHeadScanActionFeedback = require('./ArucoHeadScanActionFeedback.js');
-let VisualServoFeedback = require('./VisualServoFeedback.js');
-let VisualServoResult = require('./VisualServoResult.js');
-let VisualServoActionResult = require('./VisualServoActionResult.js');
-let VisualServoGoal = require('./VisualServoGoal.js');
-let ArucoHeadScanGoal = require('./ArucoHeadScanGoal.js');
-let VisualServoActionFeedback = require('./VisualServoActionFeedback.js');
-let VisualServoActionGoal = require('./VisualServoActionGoal.js');
-let ArucoHeadScanActionResult = require('./ArucoHeadScanActionResult.js');
-let ArucoHeadScanResult = require('./ArucoHeadScanResult.js');
 let ArucoHeadScanFeedback = require('./ArucoHeadScanFeedback.js');
+let VisualServoGoal = require('./VisualServoGoal.js');
+let ArucoHeadScanActionGoal = require('./ArucoHeadScanActionGoal.js');
+let VisualServoActionGoal = require('./VisualServoActionGoal.js');
+let VisualServoResult = require('./VisualServoResult.js');
+let ArucoHeadScanActionResult = require('./ArucoHeadScanActionResult.js');
+let ArucoHeadScanAction = require('./ArucoHeadScanAction.js');
+let ArucoHeadScanGoal = require('./ArucoHeadScanGoal.js');
+let ArucoHeadScanResult = require('./ArucoHeadScanResult.js');
+let VisualServoActionResult = require('./VisualServoActionResult.js');
+let VisualServoFeedback = require('./VisualServoFeedback.js');
 
 module.exports = {
-  ArucoHeadScanActionGoal: ArucoHeadScanActionGoal,
-  ArucoHeadScanAction: ArucoHeadScanAction,
+  VisualServoActionFeedback: VisualServoActionFeedback,
   VisualServoAction: VisualServoAction,
   ArucoHeadScanActionFeedback: ArucoHeadScanActionFeedback,
-  VisualServoFeedback: VisualServoFeedback,
-  VisualServoResult: VisualServoResult,
-  VisualServoActionResult: VisualServoActionResult,
-  VisualServoGoal: VisualServoGoal,
-  ArucoHeadScanGoal: ArucoHeadScanGoal,
-  VisualServoActionFeedback: VisualServoActionFeedback,
-  VisualServoActionGoal: VisualServoActionGoal,
-  ArucoHeadScanActionResult: ArucoHeadScanActionResult,
-  ArucoHeadScanResult: ArucoHeadScanResult,
   ArucoHeadScanFeedback: ArucoHeadScanFeedback,
+  VisualServoGoal: VisualServoGoal,
+  ArucoHeadScanActionGoal: ArucoHeadScanActionGoal,
+  VisualServoActionGoal: VisualServoActionGoal,
+  VisualServoResult: VisualServoResult,
+  ArucoHeadScanActionResult: ArucoHeadScanActionResult,
+  ArucoHeadScanAction: ArucoHeadScanAction,
+  ArucoHeadScanGoal: ArucoHeadScanGoal,
+  ArucoHeadScanResult: ArucoHeadScanResult,
+  VisualServoActionResult: VisualServoActionResult,
+  VisualServoFeedback: VisualServoFeedback,
 };

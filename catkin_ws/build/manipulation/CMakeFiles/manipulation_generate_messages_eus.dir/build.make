@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/progress.make
 
+<<<<<<< HEAD
 manipulation/CMakeFiles/manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/AlignBase.l
 manipulation/CMakeFiles/manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/manifest.l
 
@@ -61,13 +62,27 @@ manipulation/CMakeFiles/manipulation_generate_messages_eus: /home/hello-robot/gr
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/AlignBase.l: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from manipulation/AlignBase.srv"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv
+=======
+manipulation/CMakeFiles/manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/ExecuteCommand.l
+manipulation/CMakeFiles/manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/manifest.l
+
+
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/ExecuteCommand.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/ExecuteCommand.l: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from manipulation/ExecuteCommand.srv"
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for manipulation"
 	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation manipulation std_msgs
 
 manipulation_generate_messages_eus: manipulation/CMakeFiles/manipulation_generate_messages_eus
+<<<<<<< HEAD
 manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/AlignBase.l
+=======
+manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/srv/ExecuteCommand.l
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 manipulation_generate_messages_eus: /home/hello-robot/grocery_bot/catkin_ws/devel/share/roseus/ros/manipulation/manifest.l
 manipulation_generate_messages_eus: manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/build.make
 

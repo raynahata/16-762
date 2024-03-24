@@ -1,7 +1,11 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
+<<<<<<< HEAD
 services_str = "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+services_str = "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 pkg_name = "manipulation"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

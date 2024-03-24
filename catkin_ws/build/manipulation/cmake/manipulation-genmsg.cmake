@@ -17,9 +17,15 @@ add_custom_target(manipulation_generate_messages ALL)
 
 
 
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
 add_custom_target(_manipulation_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "manipulation" "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" ""
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+add_custom_target(_manipulation_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "manipulation" "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" ""
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 )
 
 #
@@ -31,7 +37,11 @@ add_custom_target(_manipulation_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(manipulation
+<<<<<<< HEAD
   "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+  "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/manipulation
@@ -49,7 +59,11 @@ add_custom_target(manipulation_generate_messages_cpp
 add_dependencies(manipulation_generate_messages manipulation_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 add_dependencies(manipulation_generate_messages_cpp _manipulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -64,7 +78,11 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS manipulation_generate_messages_cpp)
 
 ### Generating Services
 _generate_srv_eus(manipulation
+<<<<<<< HEAD
   "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+  "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/manipulation
@@ -82,7 +100,11 @@ add_custom_target(manipulation_generate_messages_eus
 add_dependencies(manipulation_generate_messages manipulation_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 add_dependencies(manipulation_generate_messages_eus _manipulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -97,7 +119,11 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS manipulation_generate_messages_eus)
 
 ### Generating Services
 _generate_srv_lisp(manipulation
+<<<<<<< HEAD
   "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+  "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/manipulation
@@ -115,7 +141,11 @@ add_custom_target(manipulation_generate_messages_lisp
 add_dependencies(manipulation_generate_messages manipulation_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 add_dependencies(manipulation_generate_messages_lisp _manipulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -130,7 +160,11 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS manipulation_generate_messages_lisp
 
 ### Generating Services
 _generate_srv_nodejs(manipulation
+<<<<<<< HEAD
   "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+  "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/manipulation
@@ -148,7 +182,11 @@ add_custom_target(manipulation_generate_messages_nodejs
 add_dependencies(manipulation_generate_messages manipulation_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 add_dependencies(manipulation_generate_messages_nodejs _manipulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -163,7 +201,11 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS manipulation_generate_messages_node
 
 ### Generating Services
 _generate_srv_py(manipulation
+<<<<<<< HEAD
   "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv"
+=======
+  "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/manipulation
@@ -181,7 +223,11 @@ add_custom_target(manipulation_generate_messages_py
 add_dependencies(manipulation_generate_messages manipulation_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+<<<<<<< HEAD
 get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv" NAME_WE)
+=======
+get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv" NAME_WE)
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 add_dependencies(manipulation_generate_messages_py _manipulation_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

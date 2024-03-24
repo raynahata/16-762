@@ -68,11 +68,31 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+<<<<<<< HEAD
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
+=======
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
@@ -91,6 +111,7 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+<<<<<<< HEAD
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -111,6 +132,13 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+=======
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 # Special rule for the target install
 install: preinstall
@@ -123,6 +151,17 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,6 +196,7 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD
 manipulation/CMakeFiles/tf_generate_messages_cpp.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf_generate_messages_cpp.dir/rule
 .PHONY : manipulation/CMakeFiles/tf_generate_messages_cpp.dir/rule
@@ -260,6 +300,50 @@ std_srvs_generate_messages_eus: manipulation/CMakeFiles/std_srvs_generate_messag
 std_srvs_generate_messages_eus/fast:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 .PHONY : std_srvs_generate_messages_eus/fast
+=======
+manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
 
 # Convenience name for target.
 manipulation/CMakeFiles/manipulation_geneus.dir/rule:
@@ -292,6 +376,112 @@ manipulation_genpy/fast:
 .PHONY : manipulation_genpy/fast
 
 # Convenience name for target.
+manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_geneus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_geneus.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_geneus.dir/rule
+
+# Convenience name for target.
+manipulation_geneus: manipulation/CMakeFiles/manipulation_geneus.dir/rule
+
+.PHONY : manipulation_geneus
+
+# fast build rule for target.
+manipulation_geneus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_geneus.dir/build.make manipulation/CMakeFiles/manipulation_geneus.dir/build
+.PHONY : manipulation_geneus/fast
+
+# Convenience name for target.
+<<<<<<< HEAD
+manipulation/CMakeFiles/manipulation_genpy.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_genpy.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_genpy.dir/rule
+
+# Convenience name for target.
+manipulation_genpy: manipulation/CMakeFiles/manipulation_genpy.dir/rule
+
+.PHONY : manipulation_genpy
+
+# fast build rule for target.
+manipulation_genpy/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_genpy.dir/build.make manipulation/CMakeFiles/manipulation_genpy.dir/build
+.PHONY : manipulation_genpy/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_py: manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_py
+
+# fast build rule for target.
+pcl_msgs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+.PHONY : pcl_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages_eus: manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/rule
+
+.PHONY : manipulation_generate_messages_eus
+
+# fast build rule for target.
+manipulation_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/build
+.PHONY : manipulation_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: manipulation/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_eus.dir/build.make manipulation/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+=======
 manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 .PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
@@ -367,6 +557,38 @@ tf2_msgs_generate_messages_cpp/fast:
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+<<<<<<< HEAD
 manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
 .PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
@@ -500,21 +722,156 @@ nodelet_generate_messages_nodejs: manipulation/CMakeFiles/nodelet_generate_messa
 nodelet_generate_messages_nodejs/fast:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
 .PHONY : nodelet_generate_messages_nodejs/fast
+=======
+manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-.PHONY : manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+sensor_msgs_generate_messages_eus: manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
-# Convenience name for target.
-bond_generate_messages_nodejs: manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-.PHONY : bond_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_eus
 
 # fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+.PHONY : manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+
+# Convenience name for target.
+nodelet_topic_tools_gencfg: manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+
+.PHONY : nodelet_topic_tools_gencfg
+
+# fast build rule for target.
+nodelet_topic_tools_gencfg/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
+.PHONY : nodelet_topic_tools_gencfg/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_eus: manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_eus
+
+# fast build rule for target.
+pcl_msgs_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
+.PHONY : pcl_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages_lisp: manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/rule
+
+.PHONY : manipulation_generate_messages_lisp
+
+# fast build rule for target.
+manipulation_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build
+.PHONY : manipulation_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/pcl_ros_gencfg.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : manipulation/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+# Convenience name for target.
+pcl_ros_gencfg: manipulation/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+.PHONY : pcl_ros_gencfg
+
+# fast build rule for target.
+pcl_ros_gencfg/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/pcl_ros_gencfg.dir/build.make manipulation/CMakeFiles/pcl_ros_gencfg.dir/build
+.PHONY : pcl_ros_gencfg/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages_py.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages_py: manipulation/CMakeFiles/manipulation_generate_messages_py.dir/rule
+
+.PHONY : manipulation_generate_messages_py
+
+# fast build rule for target.
+manipulation_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build
+.PHONY : manipulation_generate_messages_py/fast
 
 # Convenience name for target.
 manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
@@ -532,6 +889,7 @@ topic_tools_generate_messages_lisp/fast:
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 manipulation/CMakeFiles/bond_generate_messages_py.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_py.dir/rule
 .PHONY : manipulation/CMakeFiles/bond_generate_messages_py.dir/rule
@@ -620,6 +978,96 @@ bond_generate_messages_eus: manipulation/CMakeFiles/bond_generate_messages_eus.d
 bond_generate_messages_eus/fast:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_eus.dir/build.make manipulation/CMakeFiles/bond_generate_messages_eus.dir/build
 .PHONY : bond_generate_messages_eus/fast
+=======
+manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_nodejs: manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+.PHONY : bond_generate_messages_nodejs
+
+# fast build rule for target.
+bond_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: manipulation/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_py.dir/build.make manipulation/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_eus: manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 # Convenience name for target.
 manipulation/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
@@ -652,6 +1100,7 @@ nodelet_generate_messages_py/fast:
 .PHONY : nodelet_generate_messages_py/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule
 .PHONY : manipulation/CMakeFiles/bond_generate_messages_lisp.dir/rule
@@ -740,6 +1189,96 @@ actionlib_generate_messages_cpp: manipulation/CMakeFiles/actionlib_generate_mess
 actionlib_generate_messages_cpp/fast:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
+=======
+manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_eus: manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+.PHONY : topic_tools_generate_messages_eus
+
+# fast build rule for target.
+topic_tools_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+.PHONY : topic_tools_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: manipulation/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_nodejs: manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+.PHONY : topic_tools_generate_messages_nodejs
+
+# fast build rule for target.
+topic_tools_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+.PHONY : topic_tools_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/rule
+.PHONY : manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/rule
+
+# Convenience name for target.
+_manipulation_generate_messages_check_deps_ExecuteCommand: manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/rule
+
+.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand
+
+# fast build rule for target.
+_manipulation_generate_messages_check_deps_ExecuteCommand/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build.make manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build
+.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 # Convenience name for target.
 manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
@@ -757,6 +1296,7 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_AlignBase.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_AlignBase.dir/rule
 .PHONY : manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_AlignBase.dir/rule
@@ -770,6 +1310,276 @@ _manipulation_generate_messages_check_deps_AlignBase: manipulation/CMakeFiles/_m
 _manipulation_generate_messages_check_deps_AlignBase/fast:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_AlignBase.dir/build.make manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_AlignBase.dir/build
 .PHONY : _manipulation_generate_messages_check_deps_AlignBase/fast
+=======
+manipulation/CMakeFiles/manipulation_gennodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_gennodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_gennodejs.dir/rule
+
+# Convenience name for target.
+manipulation_gennodejs: manipulation/CMakeFiles/manipulation_gennodejs.dir/rule
+
+.PHONY : manipulation_gennodejs
+
+# fast build rule for target.
+manipulation_gennodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_gennodejs.dir/build.make manipulation/CMakeFiles/manipulation_gennodejs.dir/build
+.PHONY : manipulation_gennodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: manipulation/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+
+# Convenience name for target.
+manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: manipulation/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_py.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: manipulation/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages: manipulation/CMakeFiles/manipulation_generate_messages.dir/rule
+
+.PHONY : manipulation_generate_messages
+
+# fast build rule for target.
+manipulation_generate_messages/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages.dir/build
+.PHONY : manipulation_generate_messages/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages_cpp: manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/rule
+
+.PHONY : manipulation_generate_messages_cpp
+
+# fast build rule for target.
+manipulation_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build
+.PHONY : manipulation_generate_messages_cpp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_gencpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_gencpp.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_gencpp.dir/rule
+
+# Convenience name for target.
+manipulation_gencpp: manipulation/CMakeFiles/manipulation_gencpp.dir/rule
+
+.PHONY : manipulation_gencpp
+
+# fast build rule for target.
+manipulation_gencpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_gencpp.dir/build.make manipulation/CMakeFiles/manipulation_gencpp.dir/build
+.PHONY : manipulation_gencpp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_nodejs: manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+pcl_msgs_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
+.PHONY : pcl_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+.PHONY : manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_lisp: manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_lisp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+.PHONY : pcl_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_genlisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_genlisp.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_genlisp.dir/rule
+
+# Convenience name for target.
+manipulation_genlisp: manipulation/CMakeFiles/manipulation_genlisp.dir/rule
+
+.PHONY : manipulation_genlisp
+
+# fast build rule for target.
+manipulation_genlisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_genlisp.dir/build.make manipulation/CMakeFiles/manipulation_genlisp.dir/build
+.PHONY : manipulation_genlisp/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+manipulation_generate_messages_nodejs: manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/rule
+
+.PHONY : manipulation_generate_messages_nodejs
+
+# fast build rule for target.
+manipulation_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build
+.PHONY : manipulation_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
+manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
@@ -973,25 +1783,47 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+<<<<<<< HEAD
 	@echo "... tf_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... manipulation_gennodejs"
+=======
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... rebuild_cache"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... manipulation_geneus"
 	@echo "... manipulation_genpy"
+<<<<<<< HEAD
+=======
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... pcl_msgs_generate_messages_cpp"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... manipulation_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_cpp"
+<<<<<<< HEAD
+=======
+	@echo "... edit_cache"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... bond_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... nodelet_topic_tools_gencfg"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... bond_generate_messages_lisp"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... manipulation_generate_messages_lisp"
 	@echo "... pcl_ros_gencfg"
+<<<<<<< HEAD
 	@echo "... install/local"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... manipulation_generate_messages_py"
@@ -1000,11 +1832,18 @@ help:
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... topic_tools_generate_messages_lisp"
+=======
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... manipulation_generate_messages_py"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... bond_generate_messages_nodejs"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... bond_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_lisp"
+<<<<<<< HEAD
 	@echo "... bond_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_py"
@@ -1017,6 +1856,23 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... _manipulation_generate_messages_check_deps_AlignBase"
+=======
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... topic_tools_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... _manipulation_generate_messages_check_deps_ExecuteCommand"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... manipulation_gennodejs"
+	@echo "... topic_tools_generate_messages_py"
+	@echo "... tf_generate_messages_py"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_cpp"
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
@@ -1030,8 +1886,11 @@ help:
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... manipulation_genlisp"
 	@echo "... manipulation_generate_messages_nodejs"
+<<<<<<< HEAD
 	@echo "... list_install_components"
 	@echo "... install"
+=======
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 .PHONY : help
 
 

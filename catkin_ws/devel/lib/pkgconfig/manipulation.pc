@@ -5,4 +5,8 @@ Description: Description of manipulation
 Version: 0.0.0
 Cflags: -I/home/hello-robot/grocery_bot/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
+<<<<<<< HEAD
 Requires: pcl_ros rospy std_msgs
+=======
+Requires: rospy std_msgs message_runtime
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b

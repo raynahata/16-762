@@ -68,17 +68,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -90,6 +79,18 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -112,17 +113,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,34 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
-.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-control_msgs_generate_messages_py: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+control_msgs_generate_messages_cpp: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : control_msgs_generate_messages_py
+.PHONY : control_msgs_generate_messages_cpp
 
 # fast build rule for target.
-control_msgs_generate_messages_py/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build
-.PHONY : control_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
-.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-control_msgs_generate_messages_nodejs: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : control_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-control_msgs_generate_messages_nodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
-.PHONY : control_msgs_generate_messages_nodejs/fast
+control_msgs_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
+.PHONY : control_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule:
@@ -202,6 +187,81 @@ control_msgs_generate_messages_lisp/fast:
 .PHONY : control_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_eus/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+.PHONY : trajectory_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+control_msgs_generate_messages_nodejs: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : control_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+control_msgs_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
+.PHONY : control_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+control_msgs_generate_messages_py: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+
+.PHONY : control_msgs_generate_messages_py
+
+# fast build rule for target.
+control_msgs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build
+.PHONY : control_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule:
 	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
@@ -217,19 +277,34 @@ control_msgs_generate_messages_eus/fast:
 .PHONY : control_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
-.PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
+stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-control_msgs_generate_messages_cpp: stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
+trajectory_msgs_generate_messages_nodejs: stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : control_msgs_generate_messages_cpp
+.PHONY : trajectory_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-control_msgs_generate_messages_cpp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
-.PHONY : control_msgs_generate_messages_cpp/fast
+trajectory_msgs_generate_messages_nodejs/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
 
 # Help Target
 help:
@@ -238,16 +313,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
-	@echo "... edit_cache"
 	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... control_msgs_generate_messages_py"
+	@echo "... control_msgs_generate_messages_cpp"
+	@echo "... control_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_eus"
 	@echo "... control_msgs_generate_messages_nodejs"
 	@echo "... install/strip"
-	@echo "... control_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... control_msgs_generate_messages_py"
+	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... control_msgs_generate_messages_eus"
-	@echo "... control_msgs_generate_messages_cpp"
+	@echo "... list_install_components"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... edit_cache"
 .PHONY : help
 
 

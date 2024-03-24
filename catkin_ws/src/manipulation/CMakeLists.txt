@@ -11,8 +11,16 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   rospy
   sensor_msgs
+<<<<<<< HEAD
   message_generation 
+=======
+  std_msgs
+  message_generation
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 )
+
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -55,11 +63,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  ExecuteCommand.srv
+)
 
 add_service_files(
    FILES
@@ -75,9 +82,18 @@ add_service_files(
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
+<<<<<<< HEAD
    DEPENDENCIES
    std_msgs
 )
+=======
+  DEPENDENCIES
+  std_msgs
+ )
+
+
+
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -109,11 +125,17 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+<<<<<<< HEAD
 #  INCLUDE_DIRS include
 #  LIBRARIES pointcloud_processor
   CATKIN_DEPENDS pcl_ros rospy std_msgs
 #  DEPENDS system_lib
+=======
+  CATKIN_DEPENDS rospy std_msgs message_runtime
+  # Add other package dependencies here
+>>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 )
+
 
 ###########
 ## Build ##
