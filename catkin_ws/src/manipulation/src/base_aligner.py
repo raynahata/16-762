@@ -7,10 +7,16 @@ import tf2_geometry_msgs
 from visualization_msgs.msg import MarkerArray
 from geometry_msgs.msg import PoseStamped
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
-
+# from control_msgs.msg import FollowJointTrajectoryGoal
 from geometry_msgs.msg import PoseStamped
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from manipulation.srv import AlignBase, AlignBaseResponse
+
+import numpy as np 
+
+# rosservice call /align_base "location: 'pick_up'"
+# rosservice call /align_base "location: 'drop_off'"
+
 
 class BaseAligner:
     def __init__(self):
@@ -29,9 +35,12 @@ class BaseAligner:
         self.marker_array_subscriber = rospy.Subscriber('/aruco/marker_array', MarkerArray, self.marker_array_callback)
         self.gripper_pose = rospy.Publisher('/gripper_pose',PoseStamped,queue_size=10)
         self.align_base_service = rospy.Service('/align_base', AlignBase, self.handle_align_base)
-    
+        # self.trajectory_client = actionlib.SimpleActionClient('/stretch_controller/follow_joint_trajectory',FollowJointTrajectoryAction)
+        # hm.HelloNode.__init__(self)
+
+
     def handle_align_base(self, req):
-        location_frame_id = req.location  # "pick_up" or "dropoff"
+        location_frame_id = "pick_up"  # "pick_up" or "dropoff"
         
         # Assuming marker pose is somehow available (e.g., last seen marker, a fixed marker, etc.)
         # You might need to adjust how you obtain/use the marker pose here.
@@ -41,12 +50,17 @@ class BaseAligner:
 
         # Transform marker_pose to the map frame
         try:
-            transform_to_map = self.tf_buffer.lookup_transform("map", location_frame_id, rospy.Time(0), rospy.Duration(4.0))
-            marker_pose_in_map = tf2_geometry_msgs.do_transform_pose(marker_pose, transform_to_map)
+            transform_to_base = self.tf_buffer.lookup_transform("base_link", location_frame_id, rospy.Time(0), rospy.Duration(4.0))
+            marker_pose_in_base = tf2_geometry_msgs.do_transform_pose(marker_pose, transform_to_base)
+
+            transform_to_map = self.tf_buffer.lookup_transform("map", "base_link", rospy.Time(0), rospy.Duration(4.0))
+            marker_pose_in_map = tf2_geometry_msgs.do_transform_pose(marker_pose_in_base, transform_to_map)
 
             desired_pose = self.calculate_desired_pose(marker_pose_in_map)
+            print("Alignment pose")
+            print(desired_pose)
             self.send_goal_to_move_base(desired_pose)
-
+            # self.move_camera()
             return AlignBaseResponse(True)
         
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
@@ -61,7 +75,7 @@ class BaseAligner:
             
             transform_to_base = self.tf_buffer.lookup_transform("base_link",
                                        # source frame:
-                                       "bottle",
+                                       "object",
                                        # get the tf at the time the pose was valid
                                        rospy.Time(0),
                                        # wait for at most 1 second for transform, otherwise throw
@@ -73,7 +87,7 @@ class BaseAligner:
     def calculate_desired_pose(self, marker_pose_in_map):
         desired_pose = PoseStamped()
         # Placeholder for actual calculation based on marker_pose_in_map
-        offset_x = -0.1  # Example offset
+        offset_x = -0.5  # Example offset
         offset_y = 0.0  # Example offset
         
         desired_pose.header = marker_pose_in_map.header

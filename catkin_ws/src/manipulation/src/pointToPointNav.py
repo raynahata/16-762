@@ -21,7 +21,8 @@ POINTS = json.load(f)
 class Move2Point():
     def __init__(self): #path_points are list of path locations
 
-        rospy.init_node('p2p_nav')
+        # rospy.init_node('p2p_nav')
+        print("inside init ")
 
     def moveToGoal(self, goal):
         goal_coords = POINTS[goal]

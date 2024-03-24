@@ -16,7 +16,6 @@ from manipulation.srv import ExecuteCommand, ExecuteCommandResponse
 # rosservice call /execute_multipoint_command "command: 'pick_up'"
 # rosservice call /execute_multipoint_command "command: 'drop_off'"
 
-
 class MultiPointCommand(hm.HelloNode):
     def __init__(self):
         hm.HelloNode.__init__(self)
@@ -51,23 +50,53 @@ class MultiPointCommand(hm.HelloNode):
 
 
     def move_camera(self):
-        # Create and send trajectory goal for head pan and tilt
+        # # Create and send trajectory goal for head pan and tilt
+        # trajectory_goal = FollowJointTrajectoryGoal()
+        # trajectory_goal.trajectory.joint_names = ['joint_head_pan', 'joint_head_tilt']
+        # rospy.loginfo('Begin moving camera to position.')
+        # # Initialize JointTrajectoryPoint with positions for both joints
+        # # Adjust pan and tilt
+        # # Since both movements are intended to start simultaneously, they are combined into a single JointTrajectoryPoint
+        # joint_point = JointTrajectoryPoint()
+        # joint_point.positions = [-1,-1]#[np.radians(-90), np.radians(-50)]  # Pan and Tilt positions respectively
+        # joint_point.velocities = [0.5,0.5]
+        
+        # joint_point.time_from_start = rospy.Duration(4.0)  # Assuming both movements take 2 seconds
+
+        # trajectory_goal.trajectory.points = [joint_point]
+        # trajectory_goal.trajectory.header.stamp = rospy.Time.now()
+        # trajectory_goal.trajectory.header.frame_id = 'base_link'
+
+
+        # self.trajectory_client.send_goal(trajectory_goal)
+        # rospy.loginfo('End moving camera to position.')
+        # self.trajectory_client.wait_for_result()
+
+        rospy.loginfo('Moving camera to position.')
+
+        # Create the trajectory goal with specified joint names
         trajectory_goal = FollowJointTrajectoryGoal()
         trajectory_goal.trajectory.joint_names = ['joint_head_pan', 'joint_head_tilt']
 
-        # Initialize JointTrajectoryPoint with positions for both joints
-        # Adjust pan and tilt
-        # Since both movements are intended to start simultaneously, they are combined into a single JointTrajectoryPoint
+        # Set up the joint trajectory point
         joint_point = JointTrajectoryPoint()
-        joint_point.positions = [np.radians(-90), np.radians(-50)]  # Pan and Tilt positions respectively
-        joint_point.time_from_start = rospy.Duration(2.0)  # Assuming both movements take 2 seconds
+        joint_point.positions = [-1, -1]  # Target positions for pan and tilt
+        joint_point.velocities = [0.5, 0.5]  # Target velocities
+        joint_point.time_from_start = rospy.Duration(4.0)  # Time to reach the target positions
 
+        # Add the joint trajectory point to the trajectory goal
         trajectory_goal.trajectory.points = [joint_point]
         trajectory_goal.trajectory.header.stamp = rospy.Time.now()
+        trajectory_goal.trajectory.header.frame_id = 'base_link'
 
+        # Send the trajectory goal
         self.trajectory_client.send_goal(trajectory_goal)
-        rospy.loginfo('Moving camera to position.')
+        rospy.loginfo('Camera movement command sent.')
+
+        # Wait for the trajectory execution to complete
         self.trajectory_client.wait_for_result()
+        rospy.loginfo('Camera movement complete.')
+
 
     def issue_multipoint_command(self, y_offset, z_offset):
         """
