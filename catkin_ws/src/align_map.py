@@ -7,79 +7,60 @@ import tf2_ros
 import tf2_geometry_msgs
 from geometry_msgs.msg import TransformStamped
 
-class ArucoLocalizationAdjust:
+class RobotLocalizationFromMarker:
     def __init__(self):
-        rospy.init_node('aruco_localization_adjust')
+        rospy.init_node('robot_localization_from_marker')
 
-        #TODO: Add known marker locations
+        #TODO: add in how to access the ARUCO markers 
 
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
-        self.tf_broadcaster = tf2_ros.TransformBroadcaster()
 
-        # Subscribe to ArUco markers and odometry
+        # Subscribe to ArUco marker detections and the robot's odometry
         rospy.Subscriber('/aruco_marker_publisher/markers', MarkerArray, self.marker_callback)
-        rospy.Subscriber('/odom', Odometry, self.odom_callback)
 
-        # Publisher for updated pose
+        # Publisher for the robot's updated pose
         self.pose_pub = rospy.Publisher('/updated_pose', PoseStamped, queue_size=10)
 
-        self.current_odom = None
-
-    def odom_callback(self, msg):
-        self.current_odom = msg
-
     def marker_callback(self, markers):
-        if not self.current_odom:
-            return
-
         for marker in markers.markers:
             marker_id = marker.id
             if marker_id in self.marker_map_locations:
-                # Known marker pose in map frame
-                known_pose = self.marker_map_locations[marker_id]
-
                 try:
-                    # Get transformation from camera to marker
-                    trans_marker = self.tf_buffer.lookup_transform('camera_link', marker.header.frame_id, rospy.Time(0), rospy.Duration(1.0))
                     
-                    # Known marker pose as a TransformStamped
-                    known_marker_transform = TransformStamped()
-                    known_marker_transform.header.stamp = rospy.Time.now()
-                    known_marker_transform.header.frame_id = "map"
-                    known_marker_transform.child_frame_id = "known_marker_" + str(marker_id)
-                    known_marker_transform.transform.translation.x = known_pose['x']
-                    known_marker_transform.transform.translation.y = known_pose['y']
-                    known_marker_transform.transform.translation.z = known_pose['z']
-                    known_marker_transform.transform.rotation.x = known_pose['qx']
-                    known_marker_transform.transform.rotation.y = known_pose['qy']
-                    known_marker_transform.transform.rotation.z = known_pose['qz']
-                    known_marker_transform.transform.rotation.w = known_pose['qw']
+                    now = rospy.Time.now()
+                    self.tf_listener.waitForTransform("map", marker.header.frame_id, now, rospy.Duration(1.0))
+                    # Marker pose in the camera frame
+                    marker_pose_camera = TransformStamped()
+                    marker_pose_camera.header.frame_id = marker.header.frame_id
+                    marker_pose_camera.child_frame_id = "aruco_marker_" + str(marker_id)
+                    marker_pose_camera.transform.translation = marker.pose.pose.position
+                    marker_pose_camera.transform.rotation = marker.pose.pose.orientation
                     
-                    # Broadcast the known marker pose
-                    self.tf_broadcaster.sendTransform(known_marker_transform)
+                    # Convert marker pose to map frame using TF
+                    marker_pose_map = tf2_geometry_msgs.do_transform_pose(marker_pose_camera, self.tf_buffer.lookup_transform("map", marker.header.frame_id, now))
                     
-                    # Wait for transform to stabilize
-                    rospy.sleep(0.1)
+                    # Known marker location
+                    known_marker_location = self.marker_map_locations[marker_id]
+                    
+                    # Calculate the robot's new pose relative to the marker's known position
+                    corrected_robot_pose = PoseStamped()
+                    corrected_robot_pose.header.stamp = now
+                    corrected_robot_pose.header.frame_id = "map"
 
-                    # Calculate robot's pose based on the observed marker pose and its known pose
-                    trans_robot = self.tf_buffer.lookup_transform('map', 'camera_link', rospy.Time(0), rospy.Duration(1.0))
-                    
-                    # Publish robot's updated pose
-                    updated_pose = PoseStamped()
-                    updated_pose.header = trans_robot.header
-                    updated_pose.pose.position = trans_robot.transform.translation
-                    updated_pose.pose.orientation = trans_robot.transform.rotation
-                    
-                    self.pose_pub.publish(updated_pose)
+                    corrected_robot_pose.pose.position.x = known_marker_location['x'] - (marker_pose_map.pose.position.x - marker_pose_camera.pose.position.x)
+                    corrected_robot_pose.pose.position.y = known_marker_location['y'] - (marker_pose_map.pose.position.y - marker_pose_camera.pose.position.y)
+                    corrected_robot_pose.pose.position.z = known_marker_location['z']
+                    corrected_robot_pose.pose.orientation = marker_pose_map.pose.orientation
 
-                except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
-                    rospy.logerr("TF2 error when processing marker: %s", e)
-                    continue
+                    self.pose_pub.publish(corrected_robot_pose)
+
+                except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException, tf2_ros.TransformException) as e:
+                    rospy.logerr("TF error in marker callback: %s", e)
 
 if __name__ == '__main__':
     try:
-        ArucoLocalizationAdjust()
+        RobotLocalizationFromMarker()
         rospy.spin()
     except rospy.ROSInterruptException:
         pass
