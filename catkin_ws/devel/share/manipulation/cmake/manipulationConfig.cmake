@@ -67,14 +67,14 @@ set(manipulation_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(manipulation_SOURCE_PREFIX /home/hello-robot/grocery_bot/catkin_ws/src/manipulation)
-  set(manipulation_DEVEL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/devel)
+  set(manipulation_SOURCE_PREFIX /home/hello-robot/16-762/catkin_ws/src/manipulation)
+  set(manipulation_DEVEL_PREFIX /home/hello-robot/16-762/catkin_ws/devel)
   set(manipulation_INSTALL_PREFIX "")
   set(manipulation_PREFIX ${manipulation_DEVEL_PREFIX})
 else()
   set(manipulation_SOURCE_PREFIX "")
   set(manipulation_DEVEL_PREFIX "")
-  set(manipulation_INSTALL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/install)
+  set(manipulation_INSTALL_PREFIX /home/hello-robot/16-762/catkin_ws/install)
   set(manipulation_PREFIX ${manipulation_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(manipulation_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/hello-robot/grocery_bot/catkin_ws/devel/include " STREQUAL " ")
+if(NOT "/home/hello-robot/16-762/catkin_ws/devel/include " STREQUAL " ")
   set(manipulation_INCLUDE_DIRS "")
-  set(_include_dirs "/home/hello-robot/grocery_bot/catkin_ws/devel/include")
+  set(_include_dirs "/home/hello-robot/16-762/catkin_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/hello-robot/grocery_bot/catkin_ws/devel/include " STREQUAL " ")
         message(FATAL_ERROR "Project 'manipulation' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'manipulation' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'manipulation' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hello-robot/16-762/catkin_ws/src/manipulation/${idir}'.  ${_report}")
     endif()
     _list_append_unique(manipulation_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hello-robot/grocery_bot/catkin_ws/devel/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,11 +185,7 @@ foreach(t ${manipulation_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-<<<<<<< HEAD
-set(depends "pcl_ros;rospy;std_msgs")
-=======
-set(depends "rospy;std_msgs;message_runtime")
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+set(depends "pcl_ros;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

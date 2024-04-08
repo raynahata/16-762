@@ -1,2 +1,2 @@
 manipulation:stretch_ros/hello_helpers:stretch_ros/stretch_calibration:stretch_ros/stretch_core:stretch_ros/stretch_dashboard:stretch_ros/stretch_deep_perception:stretch_ros/stretch_demos:stretch_ros/stretch_description:stretch_ros/stretch_funmap:stretch_ros/stretch_gazebo:stretch_ros/stretch_moveit_config:stretch_ros/stretch_navigation:stretch_ros/stretch_octomap:stretch_ros/stretch_rtabmap
--DCATKIN_DEVEL_PREFIX=/home/hello-robot/grocery_bot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/hello-robot/grocery_bot/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/hello-robot/16-762/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/hello-robot/16-762/catkin_ws/install -G Unix Makefiles

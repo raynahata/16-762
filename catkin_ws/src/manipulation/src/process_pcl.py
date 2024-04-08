@@ -34,6 +34,9 @@ class PointCloudFilter:
 
 
     def point_cloud_callback(self, ros_point_cloud):
+
+
+        
         open_3d_point_cloud = self.convertCloudFromRosToOpen3d(ros_point_cloud)
 
         # Convert Open3D point cloud to NumPy array for depth filtering
@@ -66,7 +69,16 @@ class PointCloudFilter:
     
         # Get cloud data from ros_cloud
         field_names=[field.name for field in ros_cloud.fields]
-        cloud_data = list(pc2.read_points(ros_cloud, skip_nans=True, field_names = field_names))
+
+        # Example bounding box coordinates from the OWLViT model
+        xmin, ymin, xmax, ymax = 151, 101, 180, 175
+
+
+        # Generate a list of UV coordinates within the bounding box
+        uvs = [(u, v) for v in range(ymin, ymax) for u in range(xmin, xmax)]
+
+        # Use read_points() with the uvs parameter to get points from the bounding box area
+        cloud_data = list(pc2.read_points(ros_cloud, skip_nans=True, field_names=field_names, uvs=uvs))
 
         # Check empty
         open3d_cloud = open3d.geometry.PointCloud()

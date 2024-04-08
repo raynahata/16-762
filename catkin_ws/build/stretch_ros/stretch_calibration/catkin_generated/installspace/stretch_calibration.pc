@@ -1,4 +1,4 @@
-prefix=/home/hello-robot/grocery_bot/catkin_ws/install
+prefix=/home/hello-robot/16-762/catkin_ws/install
 
 Name: stretch_calibration
 Description: Description of stretch_calibration

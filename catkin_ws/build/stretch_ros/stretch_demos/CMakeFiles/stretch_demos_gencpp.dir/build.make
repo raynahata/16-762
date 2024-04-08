@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for stretch_demos_gencpp.
 
@@ -63,10 +63,10 @@ stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build: stretch_dem
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build
 
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/stretch_demos_gencpp.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos && $(CMAKE_COMMAND) -P CMakeFiles/stretch_demos_gencpp.dir/cmake_clean.cmake
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/clean
 
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/stretch_ros/stretch_demos /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/depend
 

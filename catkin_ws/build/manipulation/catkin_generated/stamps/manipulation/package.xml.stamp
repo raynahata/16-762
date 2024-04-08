@@ -2,11 +2,7 @@
 <package format="2">
   <name>manipulation</name>
   <version>0.0.0</version>
-<<<<<<< HEAD
   <description>The manipulation package</description>
-=======
-  <description>The pointcloud_processor package</description>
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
@@ -55,7 +51,6 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>pcl_ros</build_depend>
   <build_depend>rospy</build_depend>
-<<<<<<< HEAD
   <build_depend>std_msgs</build_depend>
   <build_export_depend>pcl_ros</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
@@ -65,20 +60,11 @@
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>pcl_ros</exec_depend>
   <exec_depend>rospy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-=======
-  <build_depend>sensor_msgs</build_depend>
-  <build_export_depend>pcl_ros</build_export_depend>
-  <build_export_depend>rospy</build_export_depend>
-  <build_export_depend>sensor_msgs</build_export_depend>
-  <exec_depend>pcl_ros</exec_depend>
-  <exec_depend>rospy</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <build_depend>std_msgs</build_depend>
   <exec_depend>std_msgs</exec_depend>
   <build_depend>message_generation</build_depend>
   <exec_depend>message_runtime</exec_depend>
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 
 
   <!-- The export tag contains other, unspecified, tags -->

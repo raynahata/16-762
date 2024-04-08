@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for nodelet_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build: nodelet_gene
 .PHONY : manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
 
 manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/nodelet_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
 
 manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/manipulation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/manipulation /home/hello-robot/grocery_bot/catkin_ws/build/manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/manipulation /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/manipulation /home/hello-robot/16-762/catkin_ws/build/manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/depend
 

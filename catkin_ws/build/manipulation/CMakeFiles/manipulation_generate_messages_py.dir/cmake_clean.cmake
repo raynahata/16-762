@@ -1,10 +1,7 @@
 file(REMOVE_RECURSE
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py"
-=======
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py"
+  "/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py"
+  "/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py"
+  "/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py"
   "CMakeFiles/manipulation_generate_messages_py"
 )
 

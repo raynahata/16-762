@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,6 +92,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -126,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_core/CMakeFiles/progress.marks
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles 0
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_core/CMakeFiles/progress.marks
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/clean
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +154,82 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/preinstall
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/preinstall
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch: stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+
+.PHONY : _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build
+.PHONY : _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/rule
+
+# Convenience name for target.
+clean_test_results_stretch_core: stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/rule
+
+.PHONY : clean_test_results_stretch_core
+
+# fast build rule for target.
+clean_test_results_stretch_core/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/build
+.PHONY : clean_test_results_stretch_core/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/rule
+
+# Convenience name for target.
+_run_tests_stretch_core_rostest: stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/rule
+
+.PHONY : _run_tests_stretch_core_rostest
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/build
+.PHONY : _run_tests_stretch_core_rostest/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_stretch_core_rostest_tests_core_lib_test.launch: stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+
+.PHONY : _run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build
+.PHONY : _run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast
+
+# Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -168,12 +239,27 @@ control_msgs_generate_messages_cpp: stretch_ros/stretch_core/CMakeFiles/control_
 
 # fast build rule for target.
 control_msgs_generate_messages_cpp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
 .PHONY : control_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/rule
+
+# Convenience name for target.
+_run_tests_stretch_core: stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/rule
+
+.PHONY : _run_tests_stretch_core
+
+# fast build rule for target.
+_run_tests_stretch_core/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/build
+.PHONY : _run_tests_stretch_core/fast
+
+# Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -183,12 +269,12 @@ control_msgs_generate_messages_lisp: stretch_ros/stretch_core/CMakeFiles/control
 
 # fast build rule for target.
 control_msgs_generate_messages_lisp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
 .PHONY : control_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -198,12 +284,12 @@ trajectory_msgs_generate_messages_eus: stretch_ros/stretch_core/CMakeFiles/traje
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -213,12 +299,12 @@ control_msgs_generate_messages_nodejs: stretch_ros/stretch_core/CMakeFiles/contr
 
 # fast build rule for target.
 control_msgs_generate_messages_nodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
 .PHONY : control_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -228,12 +314,12 @@ trajectory_msgs_generate_messages_cpp: stretch_ros/stretch_core/CMakeFiles/traje
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -243,12 +329,12 @@ control_msgs_generate_messages_py: stretch_ros/stretch_core/CMakeFiles/control_m
 
 # fast build rule for target.
 control_msgs_generate_messages_py/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_py.dir/build
 .PHONY : control_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -258,12 +344,12 @@ trajectory_msgs_generate_messages_lisp: stretch_ros/stretch_core/CMakeFiles/traj
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_lisp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -273,12 +359,12 @@ control_msgs_generate_messages_eus: stretch_ros/stretch_core/CMakeFiles/control_
 
 # fast build rule for target.
 control_msgs_generate_messages_eus/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_eus.dir/build
 .PHONY : control_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -288,12 +374,27 @@ trajectory_msgs_generate_messages_nodejs: stretch_ros/stretch_core/CMakeFiles/tr
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_nodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+
+# Convenience name for target.
+run_tests_stretch_core_rostest_tests_stretch_driver_test.launch: stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/rule
+
+.PHONY : run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# fast build rule for target.
+run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build
+.PHONY : run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast
+
+# Convenience name for target.
 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 .PHONY : stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -303,8 +404,53 @@ trajectory_msgs_generate_messages_py: stretch_ros/stretch_core/CMakeFiles/trajec
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_py/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+
+# Convenience name for target.
+run_tests_stretch_core_rostest_tests_core_lib_test.launch: stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/rule
+
+.PHONY : run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# fast build rule for target.
+run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build
+.PHONY : run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/rule
+
+# Convenience name for target.
+run_tests_stretch_core: stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/rule
+
+.PHONY : run_tests_stretch_core
+
+# fast build rule for target.
+run_tests_stretch_core/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/build
+.PHONY : run_tests_stretch_core/fast
+
+# Convenience name for target.
+stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/rule
+.PHONY : stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_stretch_core_rostest: stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/rule
+
+.PHONY : run_tests_stretch_core_rostest
+
+# fast build rule for target.
+run_tests_stretch_core_rostest/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/build
+.PHONY : run_tests_stretch_core_rostest/fast
 
 # Help Target
 help:
@@ -314,20 +460,30 @@ help:
 	@echo "... depend"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch"
+	@echo "... clean_test_results_stretch_core"
+	@echo "... _run_tests_stretch_core_rostest"
+	@echo "... _run_tests_stretch_core_rostest_tests_core_lib_test.launch"
 	@echo "... control_msgs_generate_messages_cpp"
+	@echo "... _run_tests_stretch_core"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_eus"
 	@echo "... control_msgs_generate_messages_nodejs"
 	@echo "... install/strip"
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_py"
+	@echo "... test"
 	@echo "... trajectory_msgs_generate_messages_lisp"
-	@echo "... control_msgs_generate_messages_eus"
 	@echo "... list_install_components"
+	@echo "... control_msgs_generate_messages_eus"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
 	@echo "... rebuild_cache"
-	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... run_tests_stretch_core_rostest_tests_stretch_driver_test.launch"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... run_tests_stretch_core_rostest_tests_core_lib_test.launch"
+	@echo "... run_tests_stretch_core"
+	@echo "... run_tests_stretch_core_rostest"
 .PHONY : help
 
 
@@ -339,6 +495,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

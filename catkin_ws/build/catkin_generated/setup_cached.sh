@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/hello-robot/grocery_bot/catkin_ws/build'
+export PKG_CONFIG_PATH='/home/hello-robot/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
+export PWD='/home/hello-robot/16-762/catkin_ws/build'

@@ -87,6 +87,11 @@
     'use_rgb_only': False
     'name': 'drop_off'
     'link': 'None'
+  '5':
+    'length_mm': 17.0
+    'use_rgb_only': False
+    'name': 'bottle'
+    'link': 'None'
   '6':
     'length_mm': 129.0
     'use_rgb_only': False

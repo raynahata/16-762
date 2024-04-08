@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,11 +124,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles /home/hello-robot/16-762/catkin_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +181,45 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named download_extra_data
 
 # Build rule for target.
@@ -181,6 +231,58 @@ download_extra_data: cmake_check_build_system
 download_extra_data/fast:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
 .PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 #=============================================================================
 # Target rules for targets named _catkin_empty_exported_target
@@ -742,6 +844,19 @@ nav_msgs_generate_messages_eus/fast:
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named manipulation_genpy
+
+# Build rule for target.
+manipulation_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 manipulation_genpy
+.PHONY : manipulation_genpy
+
+# fast build rule for target.
+manipulation_genpy/fast:
+	$(MAKE) -f manipulation/CMakeFiles/manipulation_genpy.dir/build.make manipulation/CMakeFiles/manipulation_genpy.dir/build
+.PHONY : manipulation_genpy/fast
+
+#=============================================================================
 # Target rules for targets named std_srvs_generate_messages_py
 
 # Build rule for target.
@@ -792,19 +907,6 @@ manipulation_geneus: cmake_check_build_system
 manipulation_geneus/fast:
 	$(MAKE) -f manipulation/CMakeFiles/manipulation_geneus.dir/build.make manipulation/CMakeFiles/manipulation_geneus.dir/build
 .PHONY : manipulation_geneus/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_genpy
-
-# Build rule for target.
-manipulation_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_genpy
-.PHONY : manipulation_genpy
-
-# fast build rule for target.
-manipulation_genpy/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_genpy.dir/build.make manipulation/CMakeFiles/manipulation_genpy.dir/build
-.PHONY : manipulation_genpy/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
@@ -1119,371 +1221,6 @@ nodelet_generate_messages_eus/fast:
 .PHONY : nodelet_generate_messages_eus/fast
 
 #=============================================================================
-<<<<<<< HEAD
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_nodejs
-
-# Build rule for target.
-topic_tools_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_nodejs
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_eus
-
-# Build rule for target.
-tf2_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_gennodejs
-
-# Build rule for target.
-manipulation_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_gennodejs
-.PHONY : manipulation_gennodejs
-
-# fast build rule for target.
-manipulation_gennodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_gennodejs.dir/build.make manipulation/CMakeFiles/manipulation_gennodejs.dir/build
-.PHONY : manipulation_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_geneus
-
-# Build rule for target.
-manipulation_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_geneus
-.PHONY : manipulation_geneus
-
-# fast build rule for target.
-manipulation_geneus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_geneus.dir/build.make manipulation/CMakeFiles/manipulation_geneus.dir/build
-.PHONY : manipulation_geneus/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_genpy
-
-# Build rule for target.
-manipulation_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_genpy
-.PHONY : manipulation_genpy
-
-# fast build rule for target.
-manipulation_genpy/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_genpy.dir/build.make manipulation/CMakeFiles/manipulation_genpy.dir/build
-.PHONY : manipulation_genpy/fast
-
-#=============================================================================
-# Target rules for targets named pcl_msgs_generate_messages_py
-
-# Build rule for target.
-pcl_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_py
-.PHONY : pcl_msgs_generate_messages_py
-
-# fast build rule for target.
-pcl_msgs_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
-.PHONY : pcl_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_generate_messages_eus
-
-# Build rule for target.
-manipulation_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages_eus
-.PHONY : manipulation_generate_messages_eus
-
-# fast build rule for target.
-manipulation_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_eus.dir/build
-.PHONY : manipulation_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_eus
-
-# Build rule for target.
-tf_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_eus.dir/build.make manipulation/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_cpp
-
-# Build rule for target.
-tf2_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named pcl_msgs_generate_messages_eus
-
-# Build rule for target.
-pcl_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_eus
-.PHONY : pcl_msgs_generate_messages_eus
-
-# fast build rule for target.
-pcl_msgs_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
-.PHONY : pcl_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_cpp
-
-# Build rule for target.
-topic_tools_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_generate_messages_lisp
-
-# Build rule for target.
-manipulation_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages_lisp
-.PHONY : manipulation_generate_messages_lisp
-
-# fast build rule for target.
-manipulation_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build
-.PHONY : manipulation_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named pcl_ros_gencfg
-
-# Build rule for target.
-pcl_ros_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_ros_gencfg
-.PHONY : pcl_ros_gencfg
-
-# fast build rule for target.
-pcl_ros_gencfg/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_ros_gencfg.dir/build.make manipulation/CMakeFiles/pcl_ros_gencfg.dir/build
-.PHONY : pcl_ros_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_cpp
-
-# Build rule for target.
-nodelet_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_cpp
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_generate_messages_py
-
-# Build rule for target.
-manipulation_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages_py
-.PHONY : manipulation_generate_messages_py
-
-# fast build rule for target.
-manipulation_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build
-.PHONY : manipulation_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_py
-
-# Build rule for target.
-topic_tools_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_nodejs
-
-# Build rule for target.
-nodelet_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_nodejs
-.PHONY : nodelet_generate_messages_nodejs
-
-# fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_nodejs
-
-# Build rule for target.
-bond_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_nodejs
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_lisp
-
-# Build rule for target.
-topic_tools_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_py
-
-# Build rule for target.
-bond_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_py
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_py.dir/build.make manipulation/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_nodejs
-
-# Build rule for target.
-tf2_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_eus
-
-# Build rule for target.
-nodelet_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_eus
-.PHONY : nodelet_generate_messages_eus
-
-# fast build rule for target.
-nodelet_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_eus.dir/build
-.PHONY : nodelet_generate_messages_eus/fast
-
-#=============================================================================
 # Target rules for targets named actionlib_generate_messages_nodejs
 
 # Build rule for target.
@@ -1508,19 +1245,6 @@ nodelet_generate_messages_lisp: cmake_check_build_system
 nodelet_generate_messages_lisp/fast:
 	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build
 .PHONY : nodelet_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_eus
-
-# Build rule for target.
-bond_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_eus
-.PHONY : bond_generate_messages_eus
-
-# fast build rule for target.
-bond_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_eus.dir/build.make manipulation/CMakeFiles/bond_generate_messages_eus.dir/build
-.PHONY : bond_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_nodejs
@@ -1549,19 +1273,6 @@ nodelet_generate_messages_py/fast:
 .PHONY : nodelet_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named bond_generate_messages_lisp
-
-# Build rule for target.
-bond_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_lisp
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-#=============================================================================
 # Target rules for targets named topic_tools_generate_messages_eus
 
 # Build rule for target.
@@ -1588,30 +1299,121 @@ tf_generate_messages_lisp/fast:
 .PHONY : tf_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named nodelet_topic_tools_gencfg
+# Target rules for targets named topic_tools_generate_messages_lisp
 
 # Build rule for target.
-nodelet_topic_tools_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_topic_tools_gencfg
-.PHONY : nodelet_topic_tools_gencfg
+topic_tools_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
+.PHONY : topic_tools_generate_messages_lisp
 
 # fast build rule for target.
-nodelet_topic_tools_gencfg/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make manipulation/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
-.PHONY : nodelet_topic_tools_gencfg/fast
+topic_tools_generate_messages_lisp/fast:
+	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named pcl_msgs_generate_messages_cpp
+# Target rules for targets named topic_tools_generate_messages_nodejs
 
 # Build rule for target.
-pcl_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_cpp
-.PHONY : pcl_msgs_generate_messages_cpp
+topic_tools_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_nodejs
+.PHONY : topic_tools_generate_messages_nodejs
 
 # fast build rule for target.
-pcl_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
-.PHONY : pcl_msgs_generate_messages_cpp/fast
+topic_tools_generate_messages_nodejs/fast:
+	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+.PHONY : topic_tools_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _manipulation_generate_messages_check_deps_ExecuteCommand
+
+# Build rule for target.
+_manipulation_generate_messages_check_deps_ExecuteCommand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _manipulation_generate_messages_check_deps_ExecuteCommand
+.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand
+
+# fast build rule for target.
+_manipulation_generate_messages_check_deps_ExecuteCommand/fast:
+	$(MAKE) -f manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build.make manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build
+.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named manipulation_gennodejs
+
+# Build rule for target.
+manipulation_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 manipulation_gennodejs
+.PHONY : manipulation_gennodejs
+
+# fast build rule for target.
+manipulation_gennodejs/fast:
+	$(MAKE) -f manipulation/CMakeFiles/manipulation_gennodejs.dir/build.make manipulation/CMakeFiles/manipulation_gennodejs.dir/build
+.PHONY : manipulation_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_py
+
+# Build rule for target.
+topic_tools_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
@@ -1794,452 +1596,6 @@ pcl_msgs_generate_messages_lisp: cmake_check_build_system
 pcl_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 .PHONY : pcl_msgs_generate_messages_lisp/fast
-=======
-# Target rules for targets named actionlib_generate_messages_nodejs
-
-# Build rule for target.
-actionlib_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
-.PHONY : actionlib_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_lisp
-
-# Build rule for target.
-nodelet_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_lisp
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
-
-# Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_py
-
-# Build rule for target.
-nodelet_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_py
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/nodelet_generate_messages_py.dir/build.make manipulation/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_eus
-
-# Build rule for target.
-topic_tools_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_eus
-.PHONY : topic_tools_generate_messages_eus
-
-# fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_lisp
-
-# Build rule for target.
-topic_tools_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
-
-#=============================================================================
-# Target rules for targets named manipulation_genlisp
-
-# Build rule for target.
-manipulation_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_genlisp
-.PHONY : manipulation_genlisp
-
-# fast build rule for target.
-manipulation_genlisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_genlisp.dir/build.make manipulation/CMakeFiles/manipulation_genlisp.dir/build
-.PHONY : manipulation_genlisp/fast
-
-#=============================================================================
-<<<<<<< HEAD
-# Target rules for targets named manipulation_generate_messages_nodejs
-
-# Build rule for target.
-manipulation_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages_nodejs
-.PHONY : manipulation_generate_messages_nodejs
-
-# fast build rule for target.
-manipulation_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build
-.PHONY : manipulation_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera
-
-# Build rule for target.
-realsense2_camera: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense2_camera
-.PHONY : realsense2_camera
-
-# fast build rule for target.
-realsense2_camera/fast:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build
-.PHONY : realsense2_camera/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera_genpy
-
-# Build rule for target.
-realsense2_camera_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense2_camera_genpy
-.PHONY : realsense2_camera_genpy
-
-# fast build rule for target.
-realsense2_camera_genpy/fast:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/build
-.PHONY : realsense2_camera_genpy/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera_gennodejs
-
-# Build rule for target.
-realsense2_camera_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense2_camera_gennodejs
-.PHONY : realsense2_camera_gennodejs
-
-# fast build rule for target.
-realsense2_camera_gennodejs/fast:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/build
-.PHONY : realsense2_camera_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera_generate_messages_nodejs
-
-# Build rule for target.
-realsense2_camera_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense2_camera_generate_messages_nodejs
-.PHONY : realsense2_camera_generate_messages_nodejs
-
-# fast build rule for target.
-realsense2_camera_generate_messages_nodejs/fast:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build
-.PHONY : realsense2_camera_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera_generate_messages_py
-
-# Build rule for target.
-realsense2_camera_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense2_camera_generate_messages_py
-.PHONY : realsense2_camera_generate_messages_py
-
-# fast build rule for target.
-realsense2_camera_generate_messages_py/fast:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/build
-.PHONY : realsense2_camera_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named realsense2_camera_generate_messages_lisp
-=======
-# Target rules for targets named _manipulation_generate_messages_check_deps_ExecuteCommand
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
-
-# Build rule for target.
-_manipulation_generate_messages_check_deps_ExecuteCommand: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _manipulation_generate_messages_check_deps_ExecuteCommand
-.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand
-
-# fast build rule for target.
-_manipulation_generate_messages_check_deps_ExecuteCommand/fast:
-	$(MAKE) -f manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build.make manipulation/CMakeFiles/_manipulation_generate_messages_check_deps_ExecuteCommand.dir/build
-.PHONY : _manipulation_generate_messages_check_deps_ExecuteCommand/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_eus
-
-# Build rule for target.
-tf2_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_gennodejs
-
-# Build rule for target.
-manipulation_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_gennodejs
-.PHONY : manipulation_gennodejs
-
-# fast build rule for target.
-manipulation_gennodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_gennodejs.dir/build.make manipulation/CMakeFiles/manipulation_gennodejs.dir/build
-.PHONY : manipulation_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_py
-
-# Build rule for target.
-topic_tools_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build.make manipulation/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_nodejs
-
-# Build rule for target.
-tf_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_cpp
-
-# Build rule for target.
-actionlib_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_eus
-
-# Build rule for target.
-actionlib_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
-.PHONY : actionlib_generate_messages_eus
-
-# fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	$(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_lisp
-
-# Build rule for target.
-actionlib_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_py
-
-# Build rule for target.
-actionlib_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/actionlib_generate_messages_py.dir/build.make manipulation/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_cpp
-
-# Build rule for target.
-bond_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_cpp
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/bond_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_py
-
-# Build rule for target.
-tf2_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make manipulation/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_generate_messages
-
-# Build rule for target.
-manipulation_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages
-.PHONY : manipulation_generate_messages
-
-# fast build rule for target.
-manipulation_generate_messages/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages.dir/build
-.PHONY : manipulation_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_generate_messages_cpp
-
-# Build rule for target.
-manipulation_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_generate_messages_cpp
-.PHONY : manipulation_generate_messages_cpp
-
-# fast build rule for target.
-manipulation_generate_messages_cpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build
-.PHONY : manipulation_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named manipulation_gencpp
-
-# Build rule for target.
-manipulation_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 manipulation_gencpp
-.PHONY : manipulation_gencpp
-
-# fast build rule for target.
-manipulation_gencpp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/manipulation_gencpp.dir/build.make manipulation/CMakeFiles/manipulation_gencpp.dir/build
-.PHONY : manipulation_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named pcl_msgs_generate_messages_nodejs
-
-# Build rule for target.
-pcl_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_nodejs
-.PHONY : pcl_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-pcl_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
-.PHONY : pcl_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named pcl_msgs_generate_messages_lisp
-
-# Build rule for target.
-pcl_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_lisp
-.PHONY : pcl_msgs_generate_messages_lisp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make manipulation/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
-.PHONY : pcl_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named manipulation_genlisp
@@ -2266,6 +1622,58 @@ manipulation_generate_messages_nodejs: cmake_check_build_system
 manipulation_generate_messages_nodejs/fast:
 	$(MAKE) -f manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build.make manipulation/CMakeFiles/manipulation_generate_messages_nodejs.dir/build
 .PHONY : manipulation_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# Build rule for target.
+_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+.PHONY : _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build
+.PHONY : _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_stretch_core
+
+# Build rule for target.
+clean_test_results_stretch_core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_stretch_core
+.PHONY : clean_test_results_stretch_core
+
+# fast build rule for target.
+clean_test_results_stretch_core/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/clean_test_results_stretch_core.dir/build
+.PHONY : clean_test_results_stretch_core/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_stretch_core_rostest
+
+# Build rule for target.
+_run_tests_stretch_core_rostest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_stretch_core_rostest
+.PHONY : _run_tests_stretch_core_rostest
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest.dir/build
+.PHONY : _run_tests_stretch_core_rostest/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# Build rule for target.
+_run_tests_stretch_core_rostest_tests_core_lib_test.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_stretch_core_rostest_tests_core_lib_test.launch
+.PHONY : _run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# fast build rule for target.
+_run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build
+.PHONY : _run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast
 
 #=============================================================================
 # Target rules for targets named control_msgs_generate_messages_cpp
@@ -2279,6 +1687,19 @@ control_msgs_generate_messages_cpp: cmake_check_build_system
 control_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make stretch_ros/stretch_core/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
 .PHONY : control_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_stretch_core
+
+# Build rule for target.
+_run_tests_stretch_core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_stretch_core
+.PHONY : _run_tests_stretch_core
+
+# fast build rule for target.
+_run_tests_stretch_core/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/_run_tests_stretch_core.dir/build
+.PHONY : _run_tests_stretch_core/fast
 
 #=============================================================================
 # Target rules for targets named control_msgs_generate_messages_lisp
@@ -2385,6 +1806,19 @@ trajectory_msgs_generate_messages_nodejs/fast:
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# Build rule for target.
+run_tests_stretch_core_rostest_tests_stretch_driver_test.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+.PHONY : run_tests_stretch_core_rostest_tests_stretch_driver_test.launch
+
+# fast build rule for target.
+run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_stretch_driver_test.launch.dir/build
+.PHONY : run_tests_stretch_core_rostest_tests_stretch_driver_test.launch/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_py
 
 # Build rule for target.
@@ -2396,6 +1830,45 @@ trajectory_msgs_generate_messages_py: cmake_check_build_system
 trajectory_msgs_generate_messages_py/fast:
 	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make stretch_ros/stretch_core/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# Build rule for target.
+run_tests_stretch_core_rostest_tests_core_lib_test.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_stretch_core_rostest_tests_core_lib_test.launch
+.PHONY : run_tests_stretch_core_rostest_tests_core_lib_test.launch
+
+# fast build rule for target.
+run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest_tests_core_lib_test.launch.dir/build
+.PHONY : run_tests_stretch_core_rostest_tests_core_lib_test.launch/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_stretch_core
+
+# Build rule for target.
+run_tests_stretch_core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_stretch_core
+.PHONY : run_tests_stretch_core
+
+# fast build rule for target.
+run_tests_stretch_core/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core.dir/build
+.PHONY : run_tests_stretch_core/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_stretch_core_rostest
+
+# Build rule for target.
+run_tests_stretch_core_rostest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_stretch_core_rostest
+.PHONY : run_tests_stretch_core_rostest
+
+# fast build rule for target.
+run_tests_stretch_core_rostest/fast:
+	$(MAKE) -f stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/build.make stretch_ros/stretch_core/CMakeFiles/run_tests_stretch_core_rostest.dir/build
+.PHONY : run_tests_stretch_core_rostest/fast
 
 #=============================================================================
 # Target rules for targets named _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback
@@ -2435,6 +1908,19 @@ _stretch_demos_generate_messages_check_deps_VisualServoActionResult: cmake_check
 _stretch_demos_generate_messages_check_deps_VisualServoActionResult/fast:
 	$(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build
 .PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionResult/fast
+
+#=============================================================================
+# Target rules for targets named stretch_demos_gennodejs
+
+# Build rule for target.
+stretch_demos_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stretch_demos_gennodejs
+.PHONY : stretch_demos_gennodejs
+
+# fast build rule for target.
+stretch_demos_gennodejs/fast:
+	$(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build
+.PHONY : stretch_demos_gennodejs/fast
 
 #=============================================================================
 # Target rules for targets named _stretch_demos_generate_messages_check_deps_VisualServoGoal
@@ -2709,19 +2195,6 @@ stretch_demos_genpy/fast:
 	$(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build
 .PHONY : stretch_demos_genpy/fast
 
-#=============================================================================
-# Target rules for targets named stretch_demos_gennodejs
-
-# Build rule for target.
-stretch_demos_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stretch_demos_gennodejs
-.PHONY : stretch_demos_gennodejs
-
-# fast build rule for target.
-stretch_demos_gennodejs/fast:
-	$(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build
-.PHONY : stretch_demos_gennodejs/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2734,8 +2207,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... doxygen"
+	@echo "... run_tests"
+	@echo "... clean_test_results"
+	@echo "... tests"
 	@echo "... download_extra_data"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -2779,84 +2260,37 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... manipulation_genpy"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... manipulation_geneus"
-	@echo "... manipulation_genpy"
 	@echo "... sensor_msgs_generate_messages_cpp"
-<<<<<<< HEAD
-	@echo "... gpd_ros_geneus"
-	@echo "... gpd_ros_detect_grasps"
-	@echo "... gpd_ros_gencpp"
-	@echo "... gpd_ros_generate_messages_eus"
-	@echo "... gpd_ros_generate_messages_nodejs"
-	@echo "... gpd_ros_grasp_messages"
-	@echo "... gpd_ros_generate_messages_lisp"
-	@echo "... gpd_ros_gennodejs"
-	@echo "... gpd_ros_generate_messages_py"
-	@echo "... gpd_ros_grasp_plotter"
-	@echo "... gpd_ros_detect_grasps_server"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... manipulation_gennodejs"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... manipulation_geneus"
-	@echo "... manipulation_genpy"
-=======
 	@echo "... pcl_msgs_generate_messages_cpp"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... manipulation_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_cpp"
-<<<<<<< HEAD
-=======
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... bond_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... bond_generate_messages_lisp"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... manipulation_generate_messages_lisp"
 	@echo "... pcl_ros_gencfg"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... manipulation_generate_messages_py"
-<<<<<<< HEAD
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... tf_generate_messages_py"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
-	@echo "... topic_tools_generate_messages_lisp"
-=======
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... bond_generate_messages_nodejs"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... bond_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_lisp"
-<<<<<<< HEAD
-	@echo "... bond_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... nodelet_topic_tools_gencfg"
-	@echo "... pcl_msgs_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... _manipulation_generate_messages_check_deps_AlignBase"
-=======
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... topic_tools_generate_messages_eus"
@@ -2870,9 +2304,9 @@ help:
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... tf_generate_messages_py"
 	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... _manipulation_generate_messages_check_deps_AlignBase"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
@@ -2886,36 +2320,13 @@ help:
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... manipulation_genlisp"
 	@echo "... manipulation_generate_messages_nodejs"
-<<<<<<< HEAD
-	@echo "... realsense2_camera"
-	@echo "... realsense2_camera_genpy"
-	@echo "... realsense2_camera_gennodejs"
-	@echo "... realsense2_camera_generate_messages_nodejs"
-	@echo "... realsense2_camera_generate_messages_py"
-	@echo "... realsense2_camera_generate_messages_lisp"
-	@echo "... realsense2_camera_geneus"
-	@echo "... diagnostic_msgs_generate_messages_cpp"
-	@echo "... diagnostic_msgs_generate_messages_eus"
-	@echo "... _realsense2_camera_generate_messages_check_deps_Metadata"
-	@echo "... diagnostic_msgs_generate_messages_nodejs"
-	@echo "... realsense2_camera_generate_messages_eus"
-	@echo "... diagnostic_msgs_generate_messages_lisp"
-	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... _realsense2_camera_generate_messages_check_deps_IMUInfo"
-	@echo "... _realsense2_camera_generate_messages_check_deps_Extrinsics"
-	@echo "... realsense2_camera_generate_messages_cpp"
-	@echo "... realsense2_camera_genlisp"
-	@echo "... realsense2_camera_generate_messages"
-	@echo "... realsense2_camera_gencpp"
-	@echo "... _realsense2_camera_generate_messages_check_deps_DeviceInfo"
-	@echo "... gazebo_ros_gencfg"
-	@echo "... gazebo_msgs_generate_messages_cpp"
-	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... gazebo_msgs_generate_messages_py"
-=======
+	@echo "... _run_tests_stretch_core_rostest_tests_stretch_driver_test.launch"
+	@echo "... clean_test_results_stretch_core"
+	@echo "... _run_tests_stretch_core_rostest"
+	@echo "... _run_tests_stretch_core_rostest_tests_core_lib_test.launch"
 	@echo "... control_msgs_generate_messages_cpp"
+	@echo "... _run_tests_stretch_core"
 	@echo "... control_msgs_generate_messages_lisp"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
 	@echo "... trajectory_msgs_generate_messages_eus"
 	@echo "... control_msgs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_cpp"
@@ -2923,10 +2334,15 @@ help:
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... control_msgs_generate_messages_eus"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... run_tests_stretch_core_rostest_tests_stretch_driver_test.launch"
 	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... run_tests_stretch_core_rostest_tests_core_lib_test.launch"
+	@echo "... run_tests_stretch_core"
+	@echo "... run_tests_stretch_core_rostest"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback"
 	@echo "... stretch_demos_generate_messages_eus"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoActionResult"
+	@echo "... stretch_demos_gennodejs"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoGoal"
 	@echo "... _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback"
 	@echo "... _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal"
@@ -2948,7 +2364,6 @@ help:
 	@echo "... _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback"
 	@echo "... stretch_demos_genlisp"
 	@echo "... stretch_demos_genpy"
-	@echo "... stretch_demos_gennodejs"
 .PHONY : help
 
 

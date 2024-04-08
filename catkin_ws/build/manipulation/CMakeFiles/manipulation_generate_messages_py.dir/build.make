@@ -43,51 +43,41 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for manipulation_generate_messages_py.
 
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_py.dir/progress.make
 
-<<<<<<< HEAD
-manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
-manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
+manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
+manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
 
 
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV manipulation/AlignBase"
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV manipulation/AlignBase"
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv
 
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
-=======
-manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
-manipulation/CMakeFiles/manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV manipulation/ExecuteCommand"
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv
 
-
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV manipulation/ExecuteCommand"
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv
-
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for manipulation"
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv --initpy
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
+/home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for manipulation"
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv --initpy
 
 manipulation_generate_messages_py: manipulation/CMakeFiles/manipulation_generate_messages_py
-<<<<<<< HEAD
-manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
-=======
-manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
-manipulation_generate_messages_py: /home/hello-robot/grocery_bot/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
+manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_AlignBase.py
+manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/_ExecuteCommand.py
+manipulation_generate_messages_py: /home/hello-robot/16-762/catkin_ws/devel/lib/python3/dist-packages/manipulation/srv/__init__.py
 manipulation_generate_messages_py: manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build.make
 
 .PHONY : manipulation_generate_messages_py
@@ -98,10 +88,10 @@ manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build: manipulatio
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_py.dir/build
 
 manipulation/CMakeFiles/manipulation_generate_messages_py.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_py.dir/clean
 
 manipulation/CMakeFiles/manipulation_generate_messages_py.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/manipulation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/manipulation /home/hello-robot/grocery_bot/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/manipulation /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/manipulation /home/hello-robot/16-762/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_py.dir/depend
 

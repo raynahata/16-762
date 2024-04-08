@@ -1,8 +1,8 @@
-# Install script for directory: /home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_rtabmap
+# Install script for directory: /home/hello-robot/16-762/catkin_ws/src/stretch_ros/stretch_rtabmap
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/grocery_bot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hello-robot/16-762/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmap.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmap.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_rtabmap/cmake" TYPE FILE FILES
-    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmapConfig.cmake"
-    "/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmapConfig-version.cmake"
+    "/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmapConfig.cmake"
+    "/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_rtabmap/catkin_generated/installspace/stretch_rtabmapConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_rtabmap" TYPE FILE FILES "/home/hello-robot/grocery_bot/catkin_ws/src/stretch_ros/stretch_rtabmap/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/stretch_rtabmap" TYPE FILE FILES "/home/hello-robot/16-762/catkin_ws/src/stretch_ros/stretch_rtabmap/package.xml")
 endif()
 

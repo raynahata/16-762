@@ -67,14 +67,14 @@ set(manipulation_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(manipulation_SOURCE_PREFIX /home/hello-robot/grocery_bot/catkin_ws/src/manipulation)
-  set(manipulation_DEVEL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/devel)
+  set(manipulation_SOURCE_PREFIX /home/hello-robot/16-762/catkin_ws/src/manipulation)
+  set(manipulation_DEVEL_PREFIX /home/hello-robot/16-762/catkin_ws/devel)
   set(manipulation_INSTALL_PREFIX "")
   set(manipulation_PREFIX ${manipulation_DEVEL_PREFIX})
 else()
   set(manipulation_SOURCE_PREFIX "")
   set(manipulation_DEVEL_PREFIX "")
-  set(manipulation_INSTALL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/install)
+  set(manipulation_INSTALL_PREFIX /home/hello-robot/16-762/catkin_ws/install)
   set(manipulation_PREFIX ${manipulation_INSTALL_PREFIX})
 endif()
 
@@ -154,11 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-<<<<<<< HEAD
-    foreach(path /home/hello-robot/grocery_bot/catkin_ws/install/lib;/home/hello-robot/catkin_ws/devel/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
-=======
-    foreach(path /home/hello-robot/grocery_bot/catkin_ws/install/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+    foreach(path /home/hello-robot/16-762/catkin_ws/install/lib;/home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -189,11 +185,7 @@ foreach(t ${manipulation_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-<<<<<<< HEAD
-set(depends "pcl_ros;rospy;std_msgs")
-=======
-set(depends "rospy;std_msgs;message_runtime")
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+set(depends "pcl_ros;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

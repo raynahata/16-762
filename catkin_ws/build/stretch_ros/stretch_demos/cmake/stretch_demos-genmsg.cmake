@@ -2,7 +2,7 @@
 
 message(STATUS "stretch_demos: 14 messages, 0 services")
 
-set(MSG_I_FLAGS "-Istretch_demos:/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Istretch_demos:/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,106 +17,74 @@ add_custom_target(stretch_demos_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" "stretch_demos/ArucoHeadScanActionResult:stretch_demos/ArucoHeadScanFeedback:actionlib_msgs/GoalID:stretch_demos/ArucoHeadScanActionFeedback:stretch_demos/ArucoHeadScanActionGoal:std_msgs/Header:stretch_demos/ArucoHeadScanGoal:actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" "actionlib_msgs/GoalID:stretch_demos/ArucoHeadScanGoal:actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult:std_msgs/Header:stretch_demos/ArucoHeadScanFeedback:stretch_demos/ArucoHeadScanActionResult:stretch_demos/ArucoHeadScanActionFeedback:stretch_demos/ArucoHeadScanActionGoal"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/ArucoHeadScanActionResult:stretch_demos/ArucoHeadScanFeedback:stretch_demos/ArucoHeadScanGoal:stretch_demos/ArucoHeadScanActionFeedback:stretch_demos/ArucoHeadScanResult:stretch_demos/ArucoHeadScanActionGoal:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" "stretch_demos/ArucoHeadScanGoal:std_msgs/Header:actionlib_msgs/GoalID"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" "actionlib_msgs/GoalID:stretch_demos/ArucoHeadScanGoal:std_msgs/Header"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" "stretch_demos/ArucoHeadScanGoal:std_msgs/Header:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" "actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult:std_msgs/Header"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" "actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult:std_msgs/Header:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" "actionlib_msgs/GoalID:stretch_demos/ArucoHeadScanFeedback:std_msgs/Header:actionlib_msgs/GoalStatus"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanFeedback:std_msgs/Header"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" "actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanFeedback:std_msgs/Header:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" ""
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" "actionlib_msgs/GoalID:stretch_demos/VisualServoActionGoal:stretch_demos/VisualServoActionFeedback:stretch_demos/VisualServoResult:stretch_demos/VisualServoActionResult:std_msgs/Header:stretch_demos/VisualServoFeedback:actionlib_msgs/GoalStatus:stretch_demos/VisualServoGoal"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/VisualServoResult:stretch_demos/VisualServoGoal:stretch_demos/VisualServoActionFeedback:stretch_demos/VisualServoActionResult:stretch_demos/VisualServoFeedback:stretch_demos/VisualServoActionGoal"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" "actionlib_msgs/GoalStatus:stretch_demos/VisualServoGoal:stretch_demos/VisualServoActionGoal:std_msgs/Header:stretch_demos/VisualServoActionFeedback:stretch_demos/VisualServoActionResult:stretch_demos/VisualServoResult:stretch_demos/VisualServoFeedback:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" "stretch_demos/VisualServoGoal:std_msgs/Header:actionlib_msgs/GoalID"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:stretch_demos/VisualServoGoal"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" "std_msgs/Header:stretch_demos/VisualServoGoal:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" "actionlib_msgs/GoalID:stretch_demos/VisualServoResult:std_msgs/Header:actionlib_msgs/GoalStatus"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/VisualServoResult"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" "actionlib_msgs/GoalStatus:stretch_demos/VisualServoResult:std_msgs/Header:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-<<<<<<< HEAD
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" "stretch_demos/VisualServoFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
-=======
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/VisualServoFeedback"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/VisualServoFeedback:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" ""
 )
 
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stretch_demos" "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" ""
 )
 
 #
@@ -126,117 +94,85 @@ add_custom_target(_stretch_demos_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_cpp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stretch_demos
@@ -256,33 +192,33 @@ add_custom_target(stretch_demos_generate_messages_cpp
 add_dependencies(stretch_demos_generate_messages stretch_demos_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_cpp _stretch_demos_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -295,117 +231,85 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS stretch_demos_generate_messages_cpp
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_eus(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/stretch_demos
@@ -425,33 +329,33 @@ add_custom_target(stretch_demos_generate_messages_eus
 add_dependencies(stretch_demos_generate_messages stretch_demos_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_eus _stretch_demos_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -464,117 +368,85 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS stretch_demos_generate_messages_eus
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_lisp(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stretch_demos
@@ -594,33 +466,33 @@ add_custom_target(stretch_demos_generate_messages_lisp
 add_dependencies(stretch_demos_generate_messages stretch_demos_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_lisp _stretch_demos_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -633,117 +505,85 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS stretch_demos_generate_messages_lis
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_nodejs(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/stretch_demos
@@ -763,33 +603,33 @@ add_custom_target(stretch_demos_generate_messages_nodejs
 add_dependencies(stretch_demos_generate_messages stretch_demos_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_nodejs _stretch_demos_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -802,117 +642,85 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS stretch_demos_generate_messages_nod
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg"
   "${MSG_I_FLAGS}"
-<<<<<<< HEAD
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-=======
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
 )
 _generate_msg_py(stretch_demos
-  "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
+  "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stretch_demos
@@ -932,33 +740,33 @@ add_custom_target(stretch_demos_generate_messages_py
 add_dependencies(stretch_demos_generate_messages stretch_demos_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoAction.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoActionFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoGoal.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoResult.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/VisualServoFeedback.msg" NAME_WE)
 add_dependencies(stretch_demos_generate_messages_py _stretch_demos_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

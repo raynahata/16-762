@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for pcl_ros_gencfg.
 
@@ -63,10 +63,10 @@ manipulation/CMakeFiles/pcl_ros_gencfg.dir/build: pcl_ros_gencfg
 .PHONY : manipulation/CMakeFiles/pcl_ros_gencfg.dir/build
 
 manipulation/CMakeFiles/pcl_ros_gencfg.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/pcl_ros_gencfg.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/pcl_ros_gencfg.dir/cmake_clean.cmake
 .PHONY : manipulation/CMakeFiles/pcl_ros_gencfg.dir/clean
 
 manipulation/CMakeFiles/pcl_ros_gencfg.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/manipulation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/manipulation /home/hello-robot/grocery_bot/catkin_ws/build/manipulation/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/manipulation /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/manipulation /home/hello-robot/16-762/catkin_ws/build/manipulation/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : manipulation/CMakeFiles/pcl_ros_gencfg.dir/depend
 

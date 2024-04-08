@@ -1,4 +1,4 @@
-prefix=/home/hello-robot/grocery_bot/catkin_ws/devel
+prefix=/home/hello-robot/16-762/catkin_ws/devel
 
 Name: stretch_moveit_config
 Description: Description of stretch_moveit_config

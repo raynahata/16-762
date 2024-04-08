@@ -43,39 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for manipulation_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/progress.make
 
-<<<<<<< HEAD
-manipulation/CMakeFiles/manipulation_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp
+manipulation/CMakeFiles/manipulation_generate_messages_lisp: /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp
+manipulation/CMakeFiles/manipulation_generate_messages_lisp: /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp
 
 
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from manipulation/AlignBase.srv"
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv
+/home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from manipulation/AlignBase.srv"
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv
 
-manipulation_generate_messages_lisp: manipulation/CMakeFiles/manipulation_generate_messages_lisp
-manipulation_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp
-=======
-manipulation/CMakeFiles/manipulation_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp
-
-
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from manipulation/ExecuteCommand.srv"
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv
+/home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from manipulation/ExecuteCommand.srv"
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv
 
 manipulation_generate_messages_lisp: manipulation/CMakeFiles/manipulation_generate_messages_lisp
-manipulation_generate_messages_lisp: /home/hello-robot/grocery_bot/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+manipulation_generate_messages_lisp: /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/AlignBase.lisp
+manipulation_generate_messages_lisp: /home/hello-robot/16-762/catkin_ws/devel/share/common-lisp/ros/manipulation/srv/ExecuteCommand.lisp
 manipulation_generate_messages_lisp: manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build.make
 
 .PHONY : manipulation_generate_messages_lisp
@@ -86,10 +80,10 @@ manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build: manipulat
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/build
 
 manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/clean
 
 manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/manipulation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/manipulation /home/hello-robot/grocery_bot/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/manipulation /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/manipulation /home/hello-robot/16-762/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_lisp.dir/depend
 

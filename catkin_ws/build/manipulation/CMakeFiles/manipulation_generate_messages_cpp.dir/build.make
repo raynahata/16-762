@@ -43,43 +43,37 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 # Utility rule file for manipulation_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/progress.make
 
-<<<<<<< HEAD
-manipulation/CMakeFiles/manipulation_generate_messages_cpp: /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h
+manipulation/CMakeFiles/manipulation_generate_messages_cpp: /home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h
+manipulation/CMakeFiles/manipulation_generate_messages_cpp: /home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h
 
 
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from manipulation/AlignBase.srv"
-	cd /home/hello-robot/grocery_bot/catkin_ws/src/manipulation && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from manipulation/AlignBase.srv"
+	cd /home/hello-robot/16-762/catkin_ws/src/manipulation && /home/hello-robot/16-762/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/AlignBase.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/include/manipulation -e /opt/ros/noetic/share/gencpp/cmake/..
 
-manipulation_generate_messages_cpp: manipulation/CMakeFiles/manipulation_generate_messages_cpp
-manipulation_generate_messages_cpp: /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/AlignBase.h
-=======
-manipulation/CMakeFiles/manipulation_generate_messages_cpp: /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h
-
-
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from manipulation/ExecuteCommand.srv"
-	cd /home/hello-robot/grocery_bot/catkin_ws/src/manipulation && /home/hello-robot/grocery_bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/grocery_bot/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hello-robot/16-762/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from manipulation/ExecuteCommand.srv"
+	cd /home/hello-robot/16-762/catkin_ws/src/manipulation && /home/hello-robot/16-762/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hello-robot/16-762/catkin_ws/src/manipulation/srv/ExecuteCommand.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p manipulation -o /home/hello-robot/16-762/catkin_ws/devel/include/manipulation -e /opt/ros/noetic/share/gencpp/cmake/..
 
 manipulation_generate_messages_cpp: manipulation/CMakeFiles/manipulation_generate_messages_cpp
-manipulation_generate_messages_cpp: /home/hello-robot/grocery_bot/catkin_ws/devel/include/manipulation/ExecuteCommand.h
->>>>>>> 0175771262e24e6499a87be41a07a53cb829079b
+manipulation_generate_messages_cpp: /home/hello-robot/16-762/catkin_ws/devel/include/manipulation/AlignBase.h
+manipulation_generate_messages_cpp: /home/hello-robot/16-762/catkin_ws/devel/include/manipulation/ExecuteCommand.h
 manipulation_generate_messages_cpp: manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build.make
 
 .PHONY : manipulation_generate_messages_cpp
@@ -90,10 +84,10 @@ manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build: manipulati
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/build
 
 manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/hello-robot/16-762/catkin_ws/build/manipulation && $(CMAKE_COMMAND) -P CMakeFiles/manipulation_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/clean
 
 manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/grocery_bot/catkin_ws/src /home/hello-robot/grocery_bot/catkin_ws/src/manipulation /home/hello-robot/grocery_bot/catkin_ws/build /home/hello-robot/grocery_bot/catkin_ws/build/manipulation /home/hello-robot/grocery_bot/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hello-robot/16-762/catkin_ws/src /home/hello-robot/16-762/catkin_ws/src/manipulation /home/hello-robot/16-762/catkin_ws/build /home/hello-robot/16-762/catkin_ws/build/manipulation /home/hello-robot/16-762/catkin_ws/build/manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : manipulation/CMakeFiles/manipulation_generate_messages_cpp.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hello-robot/grocery_bot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hello-robot/16-762/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hello-robot/grocery_bot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,6 +79,29 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -112,28 +135,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/progress.marks
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/grocery_bot/catkin_ws/build/CMakeFiles 0
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos/CMakeFiles/progress.marks
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hello-robot/16-762/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/clean
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/preinstall
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/preinstall
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/rule
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -168,12 +179,12 @@ _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback: stretch_r
 
 # fast build rule for target.
 _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionFeedback.dir/build
 .PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback/fast
 
 # Convenience name for target.
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/rule
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -183,12 +194,12 @@ stretch_demos_generate_messages_eus: stretch_ros/stretch_demos/CMakeFiles/stretc
 
 # fast build rule for target.
 stretch_demos_generate_messages_eus/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_eus.dir/build
 .PHONY : stretch_demos_generate_messages_eus/fast
 
 # Convenience name for target.
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/rule
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/rule
 
 # Convenience name for target.
@@ -198,327 +209,12 @@ _stretch_demos_generate_messages_check_deps_VisualServoActionResult: stretch_ros
 
 # fast build rule for target.
 _stretch_demos_generate_messages_check_deps_VisualServoActionResult/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionResult.dir/build
 .PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionResult/fast
 
 # Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_VisualServoGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoGoal
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_VisualServoGoal/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoGoal/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_VisualServoActionGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionGoal
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_VisualServoActionGoal/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionGoal/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_VisualServoAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoAction
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_VisualServoAction/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoAction/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-stretch_demos_generate_messages_cpp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
-
-.PHONY : stretch_demos_generate_messages_cpp
-
-# fast build rule for target.
-stretch_demos_generate_messages_cpp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/build
-.PHONY : stretch_demos_generate_messages_cpp/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanResult
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanResult/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
-
-# Convenience name for target.
-stretch_demos_generate_messages_py: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
-
-.PHONY : stretch_demos_generate_messages_py
-
-# fast build rule for target.
-stretch_demos_generate_messages_py/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/build
-.PHONY : stretch_demos_generate_messages_py/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
-
-# Convenience name for target.
-stretch_demos_generate_messages: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
-
-.PHONY : stretch_demos_generate_messages
-
-# fast build rule for target.
-stretch_demos_generate_messages/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/build
-.PHONY : stretch_demos_generate_messages/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_VisualServoResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoResult
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_VisualServoResult/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoResult/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
-
-# Convenience name for target.
-stretch_demos_gencpp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
-
-.PHONY : stretch_demos_gencpp
-
-# fast build rule for target.
-stretch_demos_gencpp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build
-.PHONY : stretch_demos_gencpp/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
-
-# Convenience name for target.
-stretch_demos_geneus: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
-
-.PHONY : stretch_demos_geneus
-
-# fast build rule for target.
-stretch_demos_geneus/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/build
-.PHONY : stretch_demos_geneus/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-stretch_demos_generate_messages_nodejs: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
-
-.PHONY : stretch_demos_generate_messages_nodejs
-
-# fast build rule for target.
-stretch_demos_generate_messages_nodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/build
-.PHONY : stretch_demos_generate_messages_nodejs/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-stretch_demos_generate_messages_lisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
-
-.PHONY : stretch_demos_generate_messages_lisp
-
-# fast build rule for target.
-stretch_demos_generate_messages_lisp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build
-.PHONY : stretch_demos_generate_messages_lisp/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_VisualServoFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoFeedback
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_VisualServoFeedback/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoFeedback/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
-
-# Convenience name for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
-
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback
-
-# fast build rule for target.
-_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/build
-.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
-
-# Convenience name for target.
-stretch_demos_genlisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
-
-.PHONY : stretch_demos_genlisp
-
-# fast build rule for target.
-stretch_demos_genlisp/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/build
-.PHONY : stretch_demos_genlisp/fast
-
-# Convenience name for target.
-stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
-.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
-
-# Convenience name for target.
-stretch_demos_genpy: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
-
-.PHONY : stretch_demos_genpy
-
-# fast build rule for target.
-stretch_demos_genpy/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build
-.PHONY : stretch_demos_genpy/fast
-
-# Convenience name for target.
 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/rule:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/rule
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/rule
 .PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -528,8 +224,323 @@ stretch_demos_gennodejs: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genn
 
 # fast build rule for target.
 stretch_demos_gennodejs/fast:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gennodejs.dir/build
 .PHONY : stretch_demos_gennodejs/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_VisualServoGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoGoal
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_VisualServoGoal/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoGoal.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoGoal/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_VisualServoActionGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionGoal
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_VisualServoActionGoal/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoActionGoal.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoActionGoal/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionResult/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_VisualServoAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoAction
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_VisualServoAction/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoAction.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoAction/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionGoal/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+stretch_demos_generate_messages_cpp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/rule
+
+.PHONY : stretch_demos_generate_messages_cpp
+
+# fast build rule for target.
+stretch_demos_generate_messages_cpp/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_cpp.dir/build
+.PHONY : stretch_demos_generate_messages_cpp/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanResult
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanResult.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanResult/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
+
+# Convenience name for target.
+stretch_demos_generate_messages_py: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/rule
+
+.PHONY : stretch_demos_generate_messages_py
+
+# fast build rule for target.
+stretch_demos_generate_messages_py/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_py.dir/build
+.PHONY : stretch_demos_generate_messages_py/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
+
+# Convenience name for target.
+stretch_demos_generate_messages: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/rule
+
+.PHONY : stretch_demos_generate_messages
+
+# fast build rule for target.
+stretch_demos_generate_messages/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages.dir/build
+.PHONY : stretch_demos_generate_messages/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_VisualServoResult: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoResult
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_VisualServoResult/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoResult.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoResult/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
+
+# Convenience name for target.
+stretch_demos_gencpp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/rule
+
+.PHONY : stretch_demos_gencpp
+
+# fast build rule for target.
+stretch_demos_gencpp/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_gencpp.dir/build
+.PHONY : stretch_demos_gencpp/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
+
+# Convenience name for target.
+stretch_demos_geneus: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/rule
+
+.PHONY : stretch_demos_geneus
+
+# fast build rule for target.
+stretch_demos_geneus/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_geneus.dir/build
+.PHONY : stretch_demos_geneus/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+stretch_demos_generate_messages_nodejs: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/rule
+
+.PHONY : stretch_demos_generate_messages_nodejs
+
+# fast build rule for target.
+stretch_demos_generate_messages_nodejs/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_nodejs.dir/build
+.PHONY : stretch_demos_generate_messages_nodejs/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+stretch_demos_generate_messages_lisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/rule
+
+.PHONY : stretch_demos_generate_messages_lisp
+
+# fast build rule for target.
+stretch_demos_generate_messages_lisp/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_generate_messages_lisp.dir/build
+.PHONY : stretch_demos_generate_messages_lisp/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_VisualServoFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoFeedback
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_VisualServoFeedback/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_VisualServoFeedback.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_VisualServoFeedback/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
+
+# Convenience name for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/rule
+
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback
+
+# fast build rule for target.
+_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/build.make stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback.dir/build
+.PHONY : _stretch_demos_generate_messages_check_deps_ArucoHeadScanActionFeedback/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
+
+# Convenience name for target.
+stretch_demos_genlisp: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/rule
+
+.PHONY : stretch_demos_genlisp
+
+# fast build rule for target.
+stretch_demos_genlisp/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genlisp.dir/build
+.PHONY : stretch_demos_genlisp/fast
+
+# Convenience name for target.
+stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
+.PHONY : stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
+
+# Convenience name for target.
+stretch_demos_genpy: stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/rule
+
+.PHONY : stretch_demos_genpy
+
+# fast build rule for target.
+stretch_demos_genpy/fast:
+	cd /home/hello-robot/16-762/catkin_ws/build && $(MAKE) -f stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build.make stretch_ros/stretch_demos/CMakeFiles/stretch_demos_genpy.dir/build
+.PHONY : stretch_demos_genpy/fast
 
 # Help Target
 help:
@@ -542,7 +553,10 @@ help:
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoActionFeedback"
 	@echo "... stretch_demos_generate_messages_eus"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoActionResult"
+	@echo "... install"
+	@echo "... stretch_demos_gennodejs"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoGoal"
+	@echo "... test"
 	@echo "... _stretch_demos_generate_messages_check_deps_ArucoHeadScanFeedback"
 	@echo "... _stretch_demos_generate_messages_check_deps_ArucoHeadScanGoal"
 	@echo "... _stretch_demos_generate_messages_check_deps_VisualServoActionGoal"
@@ -566,8 +580,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... stretch_demos_genlisp"
 	@echo "... stretch_demos_genpy"
-	@echo "... stretch_demos_gennodejs"
-	@echo "... install"
 .PHONY : help
 
 
@@ -579,6 +591,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hello-robot/grocery_bot/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hello-robot/16-762/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
