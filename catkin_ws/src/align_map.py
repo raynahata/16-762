@@ -22,6 +22,22 @@ class RobotLocalizationFromMarker:
         # Publisher for the robot's updated pose
         self.pose_pub = rospy.Publisher('/updated_pose', PoseStamped, queue_size=10)
 
+    def transform_to_map(self,req):
+         try:
+            transform_to_base = self.tf_buffer.lookup_transform("base_link", location_frame_id, rospy.Time(0), rospy.Duration(4.0))
+            marker_pose_in_base = tf2_geometry_msgs.do_transform_pose(marker_pose, transform_to_base)
+
+            transform_to_map = self.tf_buffer.lookup_transform("map", "base_link", rospy.Time(0), rospy.Duration(4.0))
+            marker_pose_in_map = tf2_geometry_msgs.do_transform_pose(marker_pose_in_base, transform_to_map)
+
+            marker_pose = self.calculate_desired_pose(marker_pose_in_map)
+            print("Alignment pose")
+            print(desired_pose)
+           
+       
+            return marker_pose 
+             #add this into the code below?
+        
     def marker_callback(self, markers):
         for marker in markers.markers:
             marker_id = marker.id
