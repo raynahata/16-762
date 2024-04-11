@@ -53,14 +53,14 @@ class RobotLocalizationFromMarker:
                     observed_marker_pose.transform.rotation = marker.pose.pose.orientation
     
                     # Lookup the transformation from the camera to the map frame
-                    #camera_to_map_transform = self.tf_buffer.lookup_transform("map", marker.header.frame_id, rospy.Time(0), rospy.Duration(1.0))
-                   
+                    #manually at the begginig 
+                    camera_to_map_transform = self.tf_buffer.lookup_transform("map", marker.header.frame_id, rospy.Time(0), rospy.Duration(1.0))
+                   #save to JSON file somehwhere
+                    marker_id --> map position 
+
+                    # update current robot pose based on marker
                     transform_to_map = self.tf_buffer.lookup_transform("base_link","map", rospy.Time(0), rospy.Duration(4.0))
 
-                    
-    
-
-                    
                     
                     # Transform the observed marker pose to the map frame
                     observed_marker_pose_in_map = tf2_geometry_msgs.do_transform_pose(observed_marker_pose, camera_to_map_transform)
@@ -69,9 +69,6 @@ class RobotLocalizationFromMarker:
                     known_marker_pose = self.marker_map_locations[marker_id]
     
                     # Calculate the difference in position and orientation between the observed and known marker poses
-                    
-                    
-                    
                     position_difference = [
                         known_marker_pose['x'] - observed_marker_pose_in_map.pose.position.x,
                         known_marker_pose['y'] - observed_marker_pose_in_map.pose.position.y,
@@ -86,6 +83,8 @@ class RobotLocalizationFromMarker:
                     corrected_robot_pose.pose.position.y = camera_to_map_transform.transform.translation.y + position_difference[1]
                     corrected_robot_pose.pose.position.z = camera_to_map_transform.transform.translation.z + position_difference[2]
                     corrected_robot_pose.pose.orientation = camera_to_map_transform.transform.rotation  
+
+                    #amcl localization call a service to update the robot position, node called amcl when you run navstack, topic called initial pose, update that 
     
                     self.pose_pub.publish(corrected_robot_pose)
     
