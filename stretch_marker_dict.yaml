@@ -102,4 +102,25 @@
     'use_rgb_only': False
     'name': 'bottle'
     'link': 'None'
+  '23': 
+    'length_mm': 117.0
+    'use_rgb_only': False
+    'name': 'wall1'
+    'link': 'None'
+  '24': 
+    'length_mm': 117.0
+    'use_rgb_only': False
+    'name': 'wall2'
+    'link': 'None'
+  '25': 
+    'length_mm': 117.0
+    'use_rgb_only': False
+    'name': 'wall3'
+    'link': 'None'
+  '26': 
+    'length_mm': 117.0
+    'use_rgb_only': False
+    'name': 'wall4'
+    'link': 'None'
+  
     
