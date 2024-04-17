@@ -35,12 +35,12 @@ class BaseAligner:
         self.marker_array_subscriber = rospy.Subscriber('/aruco/marker_array', MarkerArray, self.marker_array_callback)
         self.gripper_pose = rospy.Publisher('/gripper_pose',PoseStamped,queue_size=10)
         self.align_base_service = rospy.Service('/align_base', AlignBase, self.handle_align_base)
-        # self.trajectory_client = actionlib.SimpleActionClient('/stretch_controller/follow_joint_trajectory',FollowJointTrajectoryAction)
-        # hm.HelloNode.__init__(self)
+        self.trajectory_client = actionlib.SimpleActionClient('/stretch_controller/follow_joint_trajectory',FollowJointTrajectoryAction)
+        hm.HelloNode.__init__(self)
 
 
     def handle_align_base(self, req):
-        location_frame_id = "pick_up"  # "pick_up" or "dropoff"
+        location_frame_id = "wall2"  # "pick_up" or "dropoff"
         
         # Assuming marker pose is somehow available (e.g., last seen marker, a fixed marker, etc.)
         # You might need to adjust how you obtain/use the marker pose here.
