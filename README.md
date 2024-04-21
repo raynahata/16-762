@@ -21,7 +21,7 @@ rosservice call /align_base "location: 'drop_off'"
 3. process_pcl.py (in manipulation folder)
 4. awlnode.py (in manipulation folder)
 5. Roslaunch ur5.launch
-6. rosrun /home/hello-robot/grocery_bot/catkin_ws/src/manipulation move_robot_ros_service.py
+6. rosrun move_robot_ros_service.py (in manipulation folder)
 7. rosservice call /execute_multipoint_command "location: 'pick_up' item: 'spray bottle'"
 
 
