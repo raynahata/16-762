@@ -8,7 +8,7 @@ import tf2_geometry_msgs
 import json
 from geometry_msgs.msg import TransformStamped
 
-f = open('/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/src/points.json', 'r')
+f = open('/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/src/wallPoints.json', 'r')
 POINTS = json.load(f)
 class RobotLocalizationFromMarker:
     def __init__(self):
