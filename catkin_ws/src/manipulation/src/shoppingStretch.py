@@ -27,45 +27,64 @@ def call_execute_multipoint_command(command):
         return False
 
 if __name__ == '__main__':
-    try:
-        rospy.init_node('shopping_bot_driver', anonymous=True)
-        rospy.loginfo("Starting point to point")
-        p2p = pointToPointNav.Move2Point()
 
-        rospy.loginfo("Going to pickup location")
-        # pickupReached = p2p.moveToGoal("pickup")  # go to pick up location
+    rospy.init_node('shopping_bot_driver', anonymous=True)
+    
+    for i in range(3):
+        try:
+            rospy.loginfo("Starting point to point")
+            p2p = pointToPointNav.Move2Point()
 
-        if True:
-            rospy.loginfo("Reached pickup location")
-            if call_align_base_service("pick_up"):
-                rospy.loginfo("Alignment at pickup successful")
-                # Execute sequence of commands after aligning at pick-up
-                # if call_execute_multipoint_command("pick_up"):
-                #     rospy.loginfo("Pick up sequence executed successfully")
+            rospy.loginfo("Going to pickup location")
+            pickupReached = p2p.moveToGoal("pickup")  # go to pick up location
+            
+
+            if pickupReached:
+                rospy.loginfo("Reached pickup location")
+                rospy.sleep(3)
+                # if call_align_base_service("pick_up"):
+                #     rospy.loginfo("Alignment at pickup successful")
+                #     # Execute sequence of commands after aligning at pick-up
+                #     # if call_execute_multipoint_command("pick_up"):
+                #     #     rospy.loginfo("Pick up sequence executed successfully")
+                #     # else:
+                #     #     rospy.logerr("Failed to execute pick up sequence")
                 # else:
-                #     rospy.logerr("Failed to execute pick up sequence")
-            else:
-                rospy.logerr("Alignment at pickup failed")
+                #     rospy.logerr("Alignment at pickup failed")
 
-            # rospy.loginfo("Going to dropoff location")
-            # dropoffReached = p2p.moveToGoal("dropoff")  # go to drop off location
+                
+                # rospy.loginfo("Going to midpoint")
+                # baseReached=p2p.movegoal("base")
+                
+                # rospy.sleep(3)
 
-            # if dropoffReached:
-            #     rospy.loginfo("Reached dropoff location")
-            #     if call_align_base_service("drop_off"):
-            #         rospy.loginfo("Alignment at dropoff successful")
-            #         # Execute sequence of commands after aligning at drop-off
-            #         if call_execute_multipoint_command("drop_off"):
-            #             rospy.loginfo("Drop off sequence executed successfully")
-            #         else:
-            #             rospy.logerr("Failed to execute drop off sequence")
-            #     else:
-            #         rospy.logerr("Alignment at dropoff failed")
-            # else:
-            #     rospy.logerr("Failed to reach dropoff location")
+                rospy.loginfo("Going to base")
+                baseReached = p2p.moveToGoal("base")  # go to drop off location
 
-    except rospy.ROSInterruptException:
-        rospy.loginfo("Shopping bot driver node terminated.")
+                # if baseReached:
+                #     rospy.loginfo("Going to dropoff location")
+                #     dropoffReached = p2p.moveToGoal("dropoff")  # go to drop off location
+                #     rospy.sleep(3)
+
+                if baseReached:
+                    rospy.loginfo("Reached base location")
+                    rospy.sleep(3)
+
+                    dropoffReached = p2p.moveToGoal("dropoff")  # go to drop off location
+                #     if call_align_base_service("drop_off"):
+                #         rospy.loginfo("Alignment at dropoff successful")
+                #         # Execute sequence of commands after aligning at drop-off
+                #         if call_execute_multipoint_command("drop_off"):
+                #             rospy.loginfo("Drop off sequence executed successfully")
+                #         else:
+                #             rospy.logerr("Failed to execute drop off sequence")
+                #     else:
+                #         rospy.logerr("Alignment at dropoff failed")
+                # else:
+                #     rospy.logerr("Failed to reach dropoff location")
+           
+        except rospy.ROSInterruptException:
+            rospy.loginfo("Shopping bot driver node terminated.")
 
 
 

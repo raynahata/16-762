@@ -40,7 +40,7 @@ class BaseAligner:
 
 
     def handle_align_base(self, req):
-        location_frame_id = "pick_up"  # "pick_up" or "dropoff"
+        location_frame_id = "wall2"  # "pick_up" or "dropoff"
         
         # Assuming marker pose is somehow available (e.g., last seen marker, a fixed marker, etc.)
         # You might need to adjust how you obtain/use the marker pose here.
@@ -57,10 +57,10 @@ class BaseAligner:
             marker_pose_in_map = tf2_geometry_msgs.do_transform_pose(marker_pose_in_base, transform_to_map)
 
             desired_pose = self.calculate_desired_pose(marker_pose_in_map)
-            print("Alignment pose")
+            print("desired pose")
             print(desired_pose)
-            self.send_goal_to_move_base(desired_pose)
-            # self.move_camera()
+            # self.send_goal_to_move_base(desired_pose)
+            #self.move_camera()
             return AlignBaseResponse(True)
         
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
@@ -75,7 +75,7 @@ class BaseAligner:
             
             transform_to_base = self.tf_buffer.lookup_transform("base_link",
                                        # source frame:
-                                       "object",
+                                       "wall2",
                                        # get the tf at the time the pose was valid
                                        rospy.Time(0),
                                        # wait for at most 1 second for transform, otherwise throw
@@ -87,8 +87,16 @@ class BaseAligner:
     def calculate_desired_pose(self, marker_pose_in_map):
         desired_pose = PoseStamped()
         # Placeholder for actual calculation based on marker_pose_in_map
-        offset_x = -0.5  # Example offset
-        offset_y = 0.0  # Example offset
+        offset_x = 0.0  # Example offset
+        offset_y = -0.3  # Example offset
+
+        gt_marker_x = -2.969688937
+        gt_marker_y = 4.8959352583
+
+        marker_err_x = np.abs(gt_marker_x - marker_pose_in_map.pose.position.x)
+        marker_err_y = np.abs(gt_marker_y - marker_pose_in_map.pose.position.y)
+        print("E_x: ", marker_err_x)
+        print("E_y: ", marker_err_y)
         
         desired_pose.header = marker_pose_in_map.header
         desired_pose.pose.position.x = marker_pose_in_map.pose.position.x + offset_x

@@ -14,7 +14,7 @@ from tf.transformations import quaternion_from_euler
 This class moves robot to a goal location. 
 Based on Food Basket Delivery with the Stretch RE1 by J. Sun & P. Varshney - https://zackory.com/rc2023/media/16_887_Team_1_Project_Report.pdf
 '''
-f = open('/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/src/points.json', 'r')
+f = open('/home/hello-robot/16-762/catkin_ws/src/manipulation/src/points.json', 'r')
 POINTS = json.load(f)
 # PATH_COORDS = []
 
