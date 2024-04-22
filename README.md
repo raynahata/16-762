@@ -15,7 +15,13 @@ roslaunch stretch_navigation navigation.launch map_yaml:=/home/hello-robot/16-76
 ### Base Alignment 
 rosservice call /align_base "location: 'drop_off'"
 
-## Running the object pickup 
+
+## Running just navigation 
+1. roslaunch stretch_navigation navigation.launch map_yaml:=/home/hello-robot/16-762/maps/team_1_map3.yaml
+2. roslaunch stretch_core d435i_low_resolution.launch
+3. python3 base_aligner.py
+
+## Running with the object pickup 
 1. roslaunch stretch_navigation navigation.launch map_yaml:=/home/hello-robot/16-762/maps/team_1_map3.yaml
 2. roslaunch stretch_core d435i_low_resolution.launch
 3. process_pcl.py (in manipulation folder)
