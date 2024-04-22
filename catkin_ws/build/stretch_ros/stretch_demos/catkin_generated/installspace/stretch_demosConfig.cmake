@@ -154,7 +154,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< Updated upstream
     foreach(path /home/hello-robot/16-762/catkin_ws/install/lib;/home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+=======
+    foreach(path /home/hello-robot/grocery_bot/catkin_ws/install/lib;/home/hello-robot/catkin_ws/devel/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+>>>>>>> Stashed changes
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

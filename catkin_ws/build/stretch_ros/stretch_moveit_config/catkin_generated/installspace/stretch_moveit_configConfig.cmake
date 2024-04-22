@@ -154,7 +154,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< Updated upstream:catkin_ws/build/stretch_ros/stretch_moveit_config/catkin_generated/installspace/stretch_moveit_configConfig.cmake
     foreach(path /home/hello-robot/16-762/catkin_ws/install/lib;/home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+=======
+    foreach(path /home/hello-robot/grocery_bot/catkin_ws/install/lib;/home/hello-robot/catkin_ws/devel/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+>>>>>>> Stashed changes:catkin_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

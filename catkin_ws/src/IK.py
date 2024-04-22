@@ -8,7 +8,13 @@ import numpy as np
 import ikpy.chain
 import stretch_body.robot
 
+<<<<<<< Updated upstream:catkin_ws/src/IK.py
 target_point = [0.147,-0.28,0.76]
+=======
+# NOTE before running: `python3 -m pip install ikpy graphviz urdfpy`
+
+target_point = [0.0, -0.1, 0.8]
+>>>>>>> Stashed changes:IK.py
 target_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, -np.pi/2) # [roll, pitch, yaw]
 pretarget_orientation = ikpy.utils.geometry.rpy_matrix(0.0, 0.0, 0.0)
 

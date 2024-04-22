@@ -54,7 +54,11 @@ CMAKE_BINARY_DIR = /home/hello-robot/16-762/catkin_ws/build
 include stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/progress.make
 
 stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction:
+<<<<<<< Updated upstream
 	cd /home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py stretch_demos /home/hello-robot/16-762/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg actionlib_msgs/GoalStatus:std_msgs/Header:stretch_demos/ArucoHeadScanActionResult:stretch_demos/ArucoHeadScanFeedback:stretch_demos/ArucoHeadScanGoal:stretch_demos/ArucoHeadScanActionFeedback:stretch_demos/ArucoHeadScanResult:stretch_demos/ArucoHeadScanActionGoal:actionlib_msgs/GoalID
+=======
+	cd /home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py stretch_demos /home/hello-robot/grocery_bot/catkin_ws/devel/share/stretch_demos/msg/ArucoHeadScanAction.msg actionlib_msgs/GoalStatus:stretch_demos/ArucoHeadScanResult:stretch_demos/ArucoHeadScanActionGoal:stretch_demos/ArucoHeadScanGoal:stretch_demos/ArucoHeadScanActionFeedback:stretch_demos/ArucoHeadScanActionResult:stretch_demos/ArucoHeadScanFeedback:actionlib_msgs/GoalID:std_msgs/Header
+>>>>>>> Stashed changes
 
 _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction
 _stretch_demos_generate_messages_check_deps_ArucoHeadScanAction: stretch_ros/stretch_demos/CMakeFiles/_stretch_demos_generate_messages_check_deps_ArucoHeadScanAction.dir/build.make

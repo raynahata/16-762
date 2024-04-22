@@ -67,10 +67,17 @@ set(stretch_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
+<<<<<<< Updated upstream:catkin_ws/devel/share/stretch_moveit_config/cmake/stretch_moveit_configConfig.cmake
   set(stretch_moveit_config_SOURCE_PREFIX /home/hello-robot/16-762/catkin_ws/src/stretch_ros/stretch_moveit_config)
   set(stretch_moveit_config_DEVEL_PREFIX /home/hello-robot/16-762/catkin_ws/devel)
   set(stretch_moveit_config_INSTALL_PREFIX "")
   set(stretch_moveit_config_PREFIX ${stretch_moveit_config_DEVEL_PREFIX})
+=======
+  set(pointcloud_processor_SOURCE_PREFIX /home/hello-robot/grocery_bot/catkin_ws/src/manipulation)
+  set(pointcloud_processor_DEVEL_PREFIX /home/hello-robot/grocery_bot/catkin_ws/devel)
+  set(pointcloud_processor_INSTALL_PREFIX "")
+  set(pointcloud_processor_PREFIX ${pointcloud_processor_DEVEL_PREFIX})
+>>>>>>> Stashed changes:catkin_ws/devel/share/pointcloud_processor/cmake/pointcloud_processorConfig.cmake
 else()
   set(stretch_moveit_config_SOURCE_PREFIX "")
   set(stretch_moveit_config_DEVEL_PREFIX "")
@@ -110,7 +117,11 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'stretch_moveit_config' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
+<<<<<<< Updated upstream:catkin_ws/devel/share/stretch_moveit_config/cmake/stretch_moveit_configConfig.cmake
       message(FATAL_ERROR "Project 'stretch_moveit_config' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hello-robot/16-762/catkin_ws/src/stretch_ros/stretch_moveit_config/${idir}'.  ${_report}")
+=======
+      message(FATAL_ERROR "Project 'pointcloud_processor' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hello-robot/grocery_bot/catkin_ws/src/manipulation/${idir}'.  ${_report}")
+>>>>>>> Stashed changes:catkin_ws/devel/share/pointcloud_processor/cmake/pointcloud_processorConfig.cmake
     endif()
     _list_append_unique(stretch_moveit_config_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +165,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< Updated upstream:catkin_ws/devel/share/stretch_moveit_config/cmake/stretch_moveit_configConfig.cmake
     foreach(path /home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/16-762/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+=======
+    foreach(path /home/hello-robot/grocery_bot/catkin_ws/devel/lib;/home/hello-robot/catkin_ws/devel/lib;/home/hello-robot/grocery_bot/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+>>>>>>> Stashed changes:catkin_ws/devel/share/pointcloud_processor/cmake/pointcloud_processorConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

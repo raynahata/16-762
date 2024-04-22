@@ -35,8 +35,8 @@ class BaseAligner:
         self.marker_array_subscriber = rospy.Subscriber('/aruco/marker_array', MarkerArray, self.marker_array_callback)
         self.gripper_pose = rospy.Publisher('/gripper_pose',PoseStamped,queue_size=10)
         self.align_base_service = rospy.Service('/align_base', AlignBase, self.handle_align_base)
-        self.trajectory_client = actionlib.SimpleActionClient('/stretch_controller/follow_joint_trajectory',FollowJointTrajectoryAction)
-        hm.HelloNode.__init__(self)
+        # self.trajectory_client = actionlib.SimpleActionClient('/stretch_controller/follow_joint_trajectory',FollowJointTrajectoryAction)
+        # hm.HelloNode.__init__(self)
 
 
     def handle_align_base(self, req):

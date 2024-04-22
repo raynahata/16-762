@@ -130,6 +130,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< Updated upstream
   include("/home/hello-robot/16-762/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_dashboard/cmake_install.cmake")
   include("/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_moveit_config/cmake_install.cmake")
@@ -145,6 +146,26 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_demos/cmake_install.cmake")
   include("/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_calibration/cmake_install.cmake")
   include("/home/hello-robot/16-762/catkin_ws/build/stretch_ros/stretch_gazebo/cmake_install.cmake")
+=======
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/realsense-ros/realsense2_description/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_dashboard/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_navigation/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_octomap/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_rtabmap/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/hello_helpers/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_description/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_funmap/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/gpd_ros/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/manipulation/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/realsense-ros/realsense2_camera/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/realsense_gazebo_plugin/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/respeaker_ros/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_core/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_deep_perception/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_demos/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_calibration/cmake_install.cmake")
+  include("/home/hello-robot/grocery_bot/catkin_ws/build/stretch_ros/stretch_gazebo/cmake_install.cmake")
+>>>>>>> Stashed changes
 
 endif()
 
